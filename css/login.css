@@ -1,0 +1,138 @@
+#mainWrap {
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  min-height: 30px;
+}
+
+#mainWrap .main {
+  width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+}
+
+#mainWrap .main .main-left {
+  min-height: 20px;
+  margin-left: 62px;
+  margin-right: 105px;
+}
+
+#mainWrap .main .main-left .login-reg1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+#mainWrap .main .main-left .login-reg1 h3 {
+  line-height: 44px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#mainWrap .main .main-left .login-reg1 .login {
+  width: 458px;
+  border-right: 1px solid #999;
+  padding-right: 44px;
+  float: left;
+}
+
+#mainWrap .main .main-left .login-reg1 .login .login-way {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainWrap .main .main-left .login-reg1 .login .login-way a {
+  font-size: 16px;
+  text-decoration: underline;
+  line-height: 46px;
+}
+
+#mainWrap .main .main-left .login-reg1 .login input {
+  width: 455px;
+  height: 54px;
+  border: 1px solid #999;
+  margin: 18px 0;
+}
+
+#mainWrap .main .main-left .login-reg1 .login p {
+  font-size: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+#mainWrap .main .main-left .login-reg1 .login p img{
+  margin-right: 5px;
+}
+
+#mainWrap .main .main-left .login-reg1 .login .span {
+  color: red;
+  display: none;
+}
+
+#mainWrap .main .main-left .login-reg1 button {
+  width: 398px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #000;
+}
+
+#mainWrap .main .main-left .login-reg1 .reg {
+  width: 450px;
+  margin-left: 42px;
+}
+
+#mainWrap .main .main-left .login-reg1 .reg h4 {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 900;
+}
+
+#mainWrap .main .main-left .login-reg1 .reg li {
+  margin-top: 14px;
+}
+
+#mainWrap .main .main-left .login-reg1 .reg li p {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+#mainWrap .main .main-left .login-reg1 .reg a {
+  color: #fff;
+}
+
+#mainWrap .main .main-right {
+  width: 340px;
+  height: 260px;
+  margin-top: 67px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#mainWrap .main .main-right .title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 82px;
+}
+
+#mainWrap .main .main-right p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#mainWrap .main .main-right button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  display: inline-block;
+  background-color: #000;
+}
+
+#mainWrap .main .main-right button a {
+  color: #fff;
+}

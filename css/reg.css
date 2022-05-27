@@ -1,0 +1,137 @@
+#mainWrap {
+  min-height: 50px;
+}
+
+#mainWrap .main {
+  width: 100%;
+  min-height: 20px;
+  margin: 0 auto;
+}
+
+#mainWrap .main .main-left {
+  min-height: 20px;
+  /* margin-right: 54px; */
+  margin-bottom: 100px;
+}
+#mainWrap .main .main-left p {
+  font-size: 18px;
+  line-height: 66px;
+  color: #999999;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+#mainWrap .main .main-left p a {
+  font-size: 18px;
+  color: #999999;
+}
+
+#mainWrap .main .main-left a:hover {
+  text-decoration: underline;
+}
+
+#mainWrap .main .main-left span:hover {
+  text-decoration: underline;
+}
+
+#mainWrap .main .main-left .way1 {
+  margin-left: 40px;
+}
+
+#mainWrap .main .main-left .way1 h2 {
+  font-size: 20px;
+}
+
+#mainWrap .main .main-left .way1 h2 a {
+  text-decoration: underline;
+}
+
+
+
+#mainWrap .main .main-left .way1 span {
+  font-size: 18px;
+  color: #000;
+}
+
+#mainWrap .main .main-left form {
+  margin-left: 40px;
+  margin-top: 30px;
+  padding:0 200px ;
+  box-sizing: border-box;
+}
+
+#mainWrap .main .main-left form h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#mainWrap .main .main-left form .box {
+  display: flex;
+  font-size: 18px;
+  line-height: 96px;
+}
+
+#mainWrap .main .main-left form .box span {
+  color: red;
+}
+#mainWrap .main .main-left form .box>span{
+  margin-left: 30px;
+}
+
+#mainWrap .main .main-left form .box input {
+  margin-left: 36px;
+}
+
+#mainWrap .main .main-left form .info {
+  display: flex;
+}
+
+#mainWrap .main .main-left form .info span {
+  color: red;
+}
+
+#mainWrap .main .main-left form .info .span {
+  display: none;
+}
+
+#mainWrap .main .main-left form .info p {
+  font-size: 18px;
+  color: #000;
+}
+
+#mainWrap .main .main-left form .info input {
+  width: 500px;
+  height: 55px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#mainWrap .main .main-left form .info .yan {
+  width: 238px;
+}
+
+#mainWrap .main .main-left form .info .right {
+  margin-left: 50px;
+}
+
+#mainWrap .main .main-left form .info .right button {
+  width: 174px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+
+#mainWrap .main .main-left form .ys {
+  font-size: 16px;
+  line-height: 50px;
+}
+
+#mainWrap .main .main-left form button {
+  width: 174px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}

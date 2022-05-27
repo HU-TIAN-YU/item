@@ -1,0 +1,299 @@
+html, body {
+  width: 100%; }
+  html #top, body #top {
+    width: 65px;
+    height: 128px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    position: fixed;
+    bottom: 50%;
+    right: 0; }
+  html #topWrap, body #topWrap {
+    min-height: 20px;
+    background-color: #cb9864; }
+    html #topWrap .top, body #topWrap .top {
+      /* width: 1588px; */
+      height: 44px;
+      margin: 0 auto; }
+      html #topWrap .top #test1, body #topWrap .top #test1 {
+        height: 44px;
+        font-size: 18px;
+        line-height: 44px;
+        text-align: center; }
+        html #topWrap .top #test1 div, body #topWrap .top #test1 div {
+          background-color: #cb9864; }
+  html #headerWrap, body #headerWrap {
+    min-height: 30px;
+    background-color: #f9f9f9; }
+    html #headerWrap .header, body #headerWrap .header {
+      /* width: 1588px; */
+      margin: 0 auto; }
+      html #headerWrap .header .header-top, body #headerWrap .header .header-top {
+        /* width: 1588px; */
+        height: 50px;
+        position: relative; }
+        html #headerWrap .header .header-top .left, body #headerWrap .header .header-top .left {
+          width: 214px;
+          float: left; }
+          html #headerWrap .header .header-top .left a, body #headerWrap .header .header-top .left a {
+            margin-left: 24px;
+            font-size: 16px;
+            line-height: 50px;
+            color: #999999; }
+          html #headerWrap .header .header-top .left ul, body #headerWrap .header .header-top .left ul {
+            float: right; }
+            html #headerWrap .header .header-top .left ul li, body #headerWrap .header .header-top .left ul li {
+              list-style: disc; }
+        html #headerWrap .header .header-top .call-center, body #headerWrap .header .header-top .call-center {
+          width: 750px;
+          height: 238px;
+          background-color: #fff;
+          position: absolute;
+          left: 145px;
+          top: 40px;
+          display: none;
+          z-index: 999; }
+          html #headerWrap .header .header-top .call-center h4, body #headerWrap .header .header-top .call-center h4 {
+            line-height: 80px;
+            font-size: 22px;
+            font-weight: 700;
+            border-bottom: 1px solid #999999; }
+          html #headerWrap .header .header-top .call-center ul, body #headerWrap .header .header-top .call-center ul {
+            margin-top: 24px; }
+          html #headerWrap .header .header-top .call-center li, body #headerWrap .header .header-top .call-center li {
+            font-size: 18px;
+            line-height: 28px; }
+            html #headerWrap .header .header-top .call-center li a, body #headerWrap .header .header-top .call-center li a {
+              font-size: 18px; }
+            html #headerWrap .header .header-top .call-center li p, body #headerWrap .header .header-top .call-center li p {
+              font-weight: 900; }
+          html #headerWrap .header .header-top .call-center .help, body #headerWrap .header .header-top .call-center .help {
+            width: 410px;
+            float: left; }
+            html #headerWrap .header .header-top .call-center .help .lis, body #headerWrap .header .header-top .call-center .help .lis {
+              height: 150px;
+              display: flex;
+              justify-content: space-between; }
+              html #headerWrap .header .header-top .call-center .help .lis li, body #headerWrap .header .header-top .call-center .help .lis li {
+                width: 202px; }
+        html #headerWrap .header .header-top .right, body #headerWrap .header .header-top .right {
+          width: 435px;
+          float: right; }
+          html #headerWrap .header .header-top .right li, body #headerWrap .header .header-top .right li {
+            padding: 0 24px;
+            list-style: disc;
+            float: left;
+            font-size: 16px;
+            line-height: 50px; }
+        html #headerWrap .header .header-top .attention, body #headerWrap .header .header-top .attention {
+          width: 402px;
+          height: 212px;
+          background-color: #000;
+          position: absolute;
+          top: 34px;
+          right: 155px;
+          display: none;
+          z-index: 999; }
+          html #headerWrap .header .header-top .attention :hover, body #headerWrap .header .header-top .attention :hover {
+            display: block; }
+          html #headerWrap .header .header-top .attention figure, body #headerWrap .header .header-top .attention figure {
+            width: 161px;
+            margin: 20px;
+            float: left;
+            text-align: center; }
+            html #headerWrap .header .header-top .attention figure figcaption, body #headerWrap .header .header-top .attention figure figcaption {
+              font-size: 14px;
+              color: #fff; }
+        html #headerWrap .header .header-top .login-reg, body #headerWrap .header .header-top .login-reg {
+          width: 942px;
+          background-color: #fff;
+          position: absolute;
+          right: 40px;
+          top: 35px;
+          display: none;
+          z-index: 999; }
+          html #headerWrap .header .header-top .login-reg h4, body #headerWrap .header .header-top .login-reg h4 {
+            line-height: 80px;
+            font-size: 22px;
+            font-weight: 700;
+            border-bottom: 1px solid #999999; }
+          html #headerWrap .header .header-top .login-reg .reg, body #headerWrap .header .header-top .login-reg .reg {
+            float: right; }
+          html #headerWrap .header .header-top .login-reg .login, body #headerWrap .header .header-top .login-reg .login {
+            width: 398px;
+            float: left; }
+            html #headerWrap .header .header-top .login-reg .login .login-way, body #headerWrap .header .header-top .login-reg .login .login-way {
+              display: flex;
+              justify-content: space-between; }
+              html #headerWrap .header .header-top .login-reg .login .login-way a, body #headerWrap .header .header-top .login-reg .login .login-way a {
+                font-size: 16px;
+                text-decoration: underline;
+                line-height: 46px; }
+            html #headerWrap .header .header-top .login-reg .login input, body #headerWrap .header .header-top .login-reg .login input {
+              width: 395px;
+              height: 60px;
+              border: 1px solid #999;
+              margin: 18px 0; }
+            html #headerWrap .header .header-top .login-reg .login p, body #headerWrap .header .header-top .login-reg .login p {
+              font-size: 20px;
+              line-height: 100px; }
+            html #headerWrap .header .header-top .login-reg .login .form1, body #headerWrap .header .header-top .login-reg .login .form1 {
+              display: block; }
+            html #headerWrap .header .header-top .login-reg .login .form2, body #headerWrap .header .header-top .login-reg .login .form2 {
+              display: none; }
+          html #headerWrap .header .header-top .login-reg button, body #headerWrap .header .header-top .login-reg button {
+            width: 398px;
+            height: 56px;
+            border: none;
+            color: #fff;
+            display: inline-block;
+            background-color: #000; }
+          html #headerWrap .header .header-top .login-reg .reg, body #headerWrap .header .header-top .login-reg .reg {
+            width: 410px; }
+            html #headerWrap .header .header-top .login-reg .reg h4, body #headerWrap .header .header-top .login-reg .reg h4 {
+              margin-bottom: 38px; }
+            html #headerWrap .header .header-top .login-reg .reg p, body #headerWrap .header .header-top .login-reg .reg p {
+              font-size: 18px;
+              line-height: 30px; }
+            html #headerWrap .header .header-top .login-reg .reg ul, body #headerWrap .header .header-top .login-reg .reg ul {
+              margin: 10px 0 58px 0; }
+              html #headerWrap .header .header-top .login-reg .reg ul li, body #headerWrap .header .header-top .login-reg .reg ul li {
+                list-style: disc;
+                margin-left: 18px; }
+      html #headerWrap .header .header-logo, body #headerWrap .header .header-logo {
+        height: 88px;
+        text-align: center; }
+        html #headerWrap .header .header-logo img, body #headerWrap .header .header-logo img {
+          height: 64px; }
+      html #headerWrap .header .header-bottom, body #headerWrap .header .header-bottom {
+        height: 63px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        position: relative; }
+        html #headerWrap .header .header-bottom .list-nav, body #headerWrap .header .header-bottom .list-nav {
+          float: left; }
+          html #headerWrap .header .header-bottom .list-nav li, body #headerWrap .header .header-bottom .list-nav li {
+            font-size: 16px;
+            line-height: 63px;
+            padding: 0 34px;
+            float: left; }
+        html #headerWrap .header .header-bottom .nav1, html #headerWrap .header .header-bottom .nav2, html #headerWrap .header .header-bottom .nav3, body #headerWrap .header .header-bottom .nav1, body #headerWrap .header .header-bottom .nav2, body #headerWrap .header .header-bottom .nav3 {
+          /* width: 1588px; */
+          height: 526px;
+          border-top: 1px solid #000;
+          position: absolute;
+          top: 63px;
+          left: 0;
+          display: none;
+          z-index: 999;
+          background-color: #fff;
+          font-size: 18px; }
+          html #headerWrap .header .header-bottom .nav1 .tx, html #headerWrap .header .header-bottom .nav2 .tx, html #headerWrap .header .header-bottom .nav3 .tx, body #headerWrap .header .header-bottom .nav1 .tx, body #headerWrap .header .header-bottom .nav2 .tx, body #headerWrap .header .header-bottom .nav3 .tx {
+            height: 302px;
+            display: flex;
+            justify-content: left; }
+            html #headerWrap .header .header-bottom .nav1 .tx li, html #headerWrap .header .header-bottom .nav2 .tx li, html #headerWrap .header .header-bottom .nav3 .tx li, body #headerWrap .header .header-bottom .nav1 .tx li, body #headerWrap .header .header-bottom .nav2 .tx li, body #headerWrap .header .header-bottom .nav3 .tx li {
+              width: 310px;
+              line-height: 28px; }
+            html #headerWrap .header .header-bottom .nav1 .tx .bt, html #headerWrap .header .header-bottom .nav2 .tx .bt, html #headerWrap .header .header-bottom .nav3 .tx .bt, body #headerWrap .header .header-bottom .nav1 .tx .bt, body #headerWrap .header .header-bottom .nav2 .tx .bt, body #headerWrap .header .header-bottom .nav3 .tx .bt {
+              font-weight: 900; }
+          html #headerWrap .header .header-bottom .nav1 .shp, html #headerWrap .header .header-bottom .nav2 .shp, html #headerWrap .header .header-bottom .nav3 .shp, body #headerWrap .header .header-bottom .nav1 .shp, body #headerWrap .header .header-bottom .nav2 .shp, body #headerWrap .header .header-bottom .nav3 .shp {
+            height: 224px;
+            background-color: #f2f2f2; }
+        html #headerWrap .header .header-bottom .ri, body #headerWrap .header .header-bottom .ri {
+          float: right;
+          position: relative; }
+          html #headerWrap .header .header-bottom .ri input, body #headerWrap .header .header-bottom .ri input {
+            width: 344px;
+            height: 38px;
+            margin-top: 12px; }
+          html #headerWrap .header .header-bottom .ri button, body #headerWrap .header .header-bottom .ri button {
+            width: 42px;
+            height: 42px;
+            border: none;
+            background-color: black;
+            position: absolute;
+            top: 12px;
+            right: 0; }
+            html #headerWrap .header .header-bottom .ri button a, body #headerWrap .header .header-bottom .ri button a {
+              color: #fff;
+              margin-top: 12px; }
+              html #headerWrap .header .header-bottom .ri button a span, body #headerWrap .header .header-bottom .ri button a span {
+                font-size: 30px; }
+  html #footerWrap, body #footerWrap {
+    min-height: 20px;
+    background-color: #000; }
+    html #footerWrap .footer, body #footerWrap .footer {
+      /* width: 1588px; */
+      height: 217px;
+      margin: 0 auto; }
+      html #footerWrap .footer ul, body #footerWrap .footer ul {
+        height: 217px; }
+        html #footerWrap .footer ul li, body #footerWrap .footer ul li {
+          padding: 0 130px;
+          height: 120px;
+          border-left: solid 1px #ccc;
+          float: left;
+          margin-top: 48px;
+          text-align: center; }
+          html #footerWrap .footer ul li .iconfont, body #footerWrap .footer ul li .iconfont {
+            font-size: 70px;
+            color: #fff; }
+          html #footerWrap .footer ul li p, body #footerWrap .footer ul li p {
+            font-size: 14px;
+            color: #999999; }
+          html #footerWrap .footer ul li .bai, body #footerWrap .footer ul li .bai {
+            color: #fff; }
+  html #footWrap, body #footWrap {
+    min-height: 20px; }
+    html #footWrap .foot, body #footWrap .foot {
+      /* width: 1588px; */
+      height: 605px;
+      margin: 0 auto; }
+      html #footWrap .foot ul, body #footWrap .foot ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px; }
+        html #footWrap .foot ul li, body #footWrap .foot ul li {
+          margin-top: 38px; }
+          html #footWrap .foot ul li a, body #footWrap .foot ul li a {
+            display: block;
+            color: #999999;
+            line-height: 36px; }
+          html #footWrap .foot ul li a:first-child, body #footWrap .foot ul li a:first-child {
+            color: #000; }
+          html #footWrap .foot ul li p, body #footWrap .foot ul li p {
+            line-height: 40px; }
+          html #footWrap .foot ul li input, body #footWrap .foot ul li input {
+            width: 232px;
+            height: 46px;
+            border: 1px solid #ccc;
+            margin-bottom: 34px; }
+          html #footWrap .foot ul li button, body #footWrap .foot ul li button {
+            width: 48px;
+            height: 48px;
+            background-color: #000;
+            color: #fff; }
+      html #footWrap .foot .foot-logo, body #footWrap .foot .foot-logo {
+        margin-top: 80px;
+        margin-bottom: 56px;
+        height: 100px;
+        text-align: center; }
+        html #footWrap .foot .foot-logo img, body #footWrap .foot .foot-logo img {
+          height: 100px; }
+  html #bottomWrap, body #bottomWrap {
+    min-height: 20px;
+    background-color: #f2f2f2; }
+    html #bottomWrap .bottom, body #bottomWrap .bottom {
+      /* width: 1522px; */
+      height: 148px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 33px; }
+      html #bottomWrap .bottom p, html #bottomWrap .bottom span, body #bottomWrap .bottom p, body #bottomWrap .bottom span {
+        font-size: 14px;
+        line-height: 40px; }
+      html #bottomWrap .bottom a, body #bottomWrap .bottom a {
+        text-decoration: underline; }

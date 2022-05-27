@@ -1,0 +1,139 @@
+#cart-headerWrap {
+  height: 134px;
+  border-bottom: solid 1px #000; }
+  #cart-headerWrap .cart-header {
+    /* width: 1588px; */
+    margin: 0 auto;
+    overflow: hidden; }
+    #cart-headerWrap .cart-header img {
+      height: 60px;
+      margin-top: 40px;
+      margin-left: 600px; }
+    #cart-headerWrap .cart-header .callme {
+      float: right;
+      margin-top: 60px; 
+      margin-right: 50px;
+    }
+
+#mainWrap {
+  min-height: 30px; }
+  #mainWrap a {
+    /* width: 1588px; */
+    margin: 0 auto;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 50px;
+    display: block; }
+  #mainWrap .main {
+    /* width: 1588px; */
+    min-height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    #mainWrap .main .cart {
+      width: 1060px; }
+      #mainWrap .main .cart h1 {
+        font-size: 34px;
+        line-height: 102px;
+        font-weight: 500; }
+      #mainWrap .main .cart .cart-list {
+        width: 1060px; }
+        #mainWrap .main .cart .cart-list thead {
+          height: 56px;
+          line-height: 56px;
+          background-color: #000;
+          font-size: 16px;
+          color: #fff; }
+          #mainWrap .main .cart .cart-list thead input {
+            width: 16px;
+            height: 16px;
+          }
+        #mainWrap .main .cart .cart-list tbody {
+          height: 200px;
+          padding: 40px 5px; }
+          #mainWrap .main .cart .cart-list tbody tr img {
+            width: 130px;
+            height: 130px;
+            margin: 30px 20px; }
+          #mainWrap .main .cart .cart-list tbody tr td {
+            font-size: 16px; }
+          #mainWrap .main .cart .cart-list tbody tr .num {
+            width: 120px;
+            height: 40px;
+            border: 1px solid #999;
+            position: relative;
+            display: flex;
+            justify-content: space-between; }
+            #mainWrap .main .cart .cart-list tbody tr .num input {
+              width: 30px;
+              height: 40px;
+              padding-left: 15px;
+              border: none; }
+            #mainWrap .main .cart .cart-list tbody tr .num button {
+              width: 40px;
+              height: 40px;
+              border: none; }
+      #mainWrap .main .cart .ma {
+        width: 1060px;
+        min-height: 20px;
+        text-align: center; }
+        #mainWrap .main .cart .ma p {
+          font-size: 34px;
+          line-height: 86px; }
+        #mainWrap .main .cart .ma #list {
+          width: 1060px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-bottom: 20px; }
+          #mainWrap .main .cart .ma #list li {
+            width: 288px;
+            height: 562px;
+            margin: 0 25px;
+            text-align: center; }
+            #mainWrap .main .cart .ma #list li a {
+              font-size: 20px;
+              width: 200px;
+              height: 420px;
+              line-height: 50px;
+              text-align: center; }
+              #mainWrap .main .cart .ma #list li a h2 {
+                font-size: 20px; }
+              #mainWrap .main .cart .ma #list li a p {
+                font-size: 18px; }
+            #mainWrap .main .cart .ma #list li button {
+              width: 138px;
+              height: 40px;
+              background-color: #000;
+              border: none;
+              color: #fff;
+              margin: auto; }
+    #mainWrap .main .money {
+      width: 342px; }
+      #mainWrap .main .money .dingdan {
+        width: 340px;
+        height: 334px;
+        background-color: #f2f2f2;
+        text-align: center; }
+        #mainWrap .main .money .dingdan h3 {
+          font-size: 20px;
+          line-height: 82px;
+          font-weight: 900; }
+        #mainWrap .main .money .dingdan button {
+          width: 288px;
+          height: 50px;
+          background-color: #000;
+          border: none;
+          color: #fff;
+          font-size: 18px; }
+        #mainWrap .main .money .dingdan ul {
+          width: 290px;
+          height: 135px;
+          margin-left: 26px;
+          margin-top: 32px; }
+          #mainWrap .main .money .dingdan ul li {
+            width: 290px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            line-height: 30px; }

@@ -1,0 +1,135 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "91661",
+      "name": "礼盒",
+      "font_class": "shouyezhuyetubiao06",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2069824",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2729096",
+      "name": "五角星",
+      "font_class": "start",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3446366",
+      "name": "正品保障",
+      "font_class": "zhengpin",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "3703594",
+      "name": "在线咨询",
+      "font_class": "tubiaoSVGchuli-",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "6197436",
+      "name": "黑点",
+      "font_class": "heidian",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "9157625",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "11937264",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "12013864",
+      "name": "三角箭头 Triangular",
+      "font_class": "san_jiao",
+      "unicode": "e57f",
+      "unicode_decimal": 58751
+    },
+    {
+      "icon_id": "12364403",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "12685236",
+      "name": "三角箭头",
+      "font_class": "sanjiaojiantou",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "12756459",
+      "name": "购物 袋子-1",
+      "font_class": "gouwudaizi-",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "15639364",
+      "name": "三角箭头 Triangular",
+      "font_class": "sanjiao-r-copy",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "17483094",
+      "name": "三角箭头 Triangular",
+      "font_class": "arrow-zuo",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "19983998",
+      "name": "微博",
+      "font_class": "unie61d-copy",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "19994580",
+      "name": "五角星",
+      "font_class": "xingzhuang60kaobei2-copy",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "20621399",
+      "name": "物流",
+      "font_class": "wuliu",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "20975080",
+      "name": "购物袋",
+      "font_class": "gouwudai1",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    }
+  ]
+}

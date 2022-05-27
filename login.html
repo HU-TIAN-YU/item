@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/lens.css">
+    <script src="./static/javascripts/axios.min.js"></script>
+    <link rel="stylesheet" href="./static/font/iconfont.css">
+
+<body>
+    <!-- 头部 -->
+    <header class="section">
+        <!-- 顶部信息栏 -->
+        <p class="TopInformation">
+            6.1-6.20 YSL618狂欢正当时，年中盛宴热卖星品至高叠享10件礼
+        </p>
+        <div class="header-container">
+            <div class="header-containerLeft">
+                <ul>
+                    <li>
+                        <span class="iconfont icon-location"></span>
+                        <a href="https://www.yslbeautycn.com/stores">专柜查询</a>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-heidian"></span>
+                        <a href="###" class="headerCall">客服中心</a>
+                    </li>
+                    <div class="callBox">
+                        <div class="callLeft">
+                            <h4>
+                                我能帮到您什么？
+                            </h4>
+                            <div class="callButton">
+                                <div>
+                                    <p><a href="">常见问题</a></p>
+                                    <p><a href="">订单跟踪</a></p>
+                                    <p><a href="">订购信息</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="">选择我们的原因</a></p>
+                                    <p><a href="">送货与退货</a></p>
+                                    <p><a href="">通用销售条款</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callRight">
+                            <h4>联系我们</h4>
+                            <div>
+                                <p style="font-weight: 700;">400-820-6362(9:00-18:00)</p>
+                                <p><a href="">在线咨询</a></p>
+                                <p>我们提供一周五天服务</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </ul>
+                <ul class="header-containerRight">
+                    <li class="attention">
+                        <span>关注我们</span>
+                        <span class="iconfont icon-heidian"></span>
+                    </li>
+                    <li>
+                        <span>登录与注册</span>
+                        <span class="iconfont icon-heidian"></span>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-gouwudai1"></span>
+                        <span>购物袋-0件商品</span>
+                        <span class="iconfont icon-sanjiaojiantou"></span>
+                    </li>
+                </ul>
+                <div class="header-attention">
+                    <div class="attentionLeft" style="margin-right: 30px;">
+                        <img src="./static/img/小程序.jpg" alt="">
+                        <p>小程序商场</p>
+                    </div>
+                    <div class="“attentionRight">
+                        <img src="./static/img/微信公众号.png" alt="">
+                        <p>微信公众号</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- logo -->
+            <div class="logo">
+                <img src="./static/img/download.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- 导航 -->
+    <nav>
+        <div class="navSlide">
+            <div class="navbox">
+                <ul class="nav">
+                    <li><a href="./index.html">
+                            618狂欢盛典
+                        </a></li>
+                    <li class="btn">彩妆</li>
+                    <li class="btn">护肤</li>
+                    <li class="btn">
+                        <a href="./list.html">
+                            香水
+                        </a>
+                    </li>
+                    <li>限定礼盒</li>
+                    <li>定制服务</li>
+                    <li>会员中心</li>
+                    <li>品牌故事</li>
+                </ul>
+                <!-- 搜索框 -->
+                <div class="navRight">
+                    <form action="">
+                        <div class="search">
+                            <input type="text" id="search">
+                            <ul id="list">
+
+                            </ul>
+                            <span class="iconfont icon-fangdajing" style="font-size: 30px;"></span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- 二级菜单 -->
+
+            <div class="submenu">
+                <!-- 彩妆二级菜单 -->
+                <div class="makeUpSubmenu">
+                    <!-- 菜单 -->
+                    <div class="submenuTop">
+                        <ul>
+                            <li>唇部</li>
+                            <li>唇膏</li>
+                            <li>唇釉</li>
+                        </ul>
+                        <ul>
+                            <li>面部</li>
+                            <li>妆前隔离</li>
+                            <li>粉底</li>
+                            <li>粉饼</li>
+                            <li>明彩笔</li>
+                            <li>散粉</li>
+                            <li>腮红</li>
+                        </ul>
+                        <ul>
+                            <li>眼部</li>
+                            <li>睫毛膏</li>
+                            <li>眉笔</li>
+                            <li>眼影</li>
+                        </ul>
+                    </div>
+                    <!-- 菜单图片 -->
+                    <div class="submenuButton">
+                        <div class="ImgLeft">
+                            <img src="./static/img/小金条.jpg" alt="">
+                            <div>
+                                <p>YSL「小金条」N°1966</p>
+                                <p>无法复刻的红棕</p>
+                                <a href="https://www.yslbeautycn.com/item/00286YSL">了解详情</a>
+                            </div>
+                        </div>
+                        <div class="ImgRight">
+                            <img src="./static/img/气垫.jpg" alt="">
+                            <div>
+                                <p>YSL「皮气垫」星芒限定版</p>
+                                <p>高定闪片耀世来袭</p>
+                                <a href="https://www.yslbeautycn.com/item/00820YSL">了解详情</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 护肤二级菜单 -->
+                <div class="makeUpSubmenu">
+                    <!-- 菜单 -->
+                    <div class="submenuTop">
+                        <ul>
+                            <li>按产品分类</li>
+                            <li>隔离防晒</li>
+                            <li>卸妆清洁</li>
+                            <li>爽肤水</li>
+                            <li>精华</li>
+                            <li>面霜/乳液</li>
+                            <li>眼唇护理</li>
+                        </ul>
+                        <ul>
+                            <li>按功能分类</li>
+                            <li>全校青春</li>
+                            <li>至臻奢护</li>
+                            <li>基础亮颜</li>
+                        </ul>
+                        <ul>
+                            <li>按系列分类</li>
+                            <li>高能修护系列</li>
+                            <li>妍活青春</li>
+                            <li>藏金奢妍</li>
+                            <li>超模绝密</li>
+                        </ul>
+                    </div>
+                    <!-- 菜单图片 -->
+                    <div class="submenuButton">
+                        <div class="ImgLeft">
+                            <img src="./static/img/精华.jpg" alt="">
+                            <div>
+                                <p>圣罗兰夜皇后精华</p>
+                                <p>细致毛孔 平滑透亮</p>
+                                <a href="https://www.yslbeautycn.com/item/00386YSL-002">了解详情</a>
+                            </div>
+                        </div>
+                        <div class="ImgRight">
+                            <img src="./static/img/防晒.jpg" alt="">
+                            <div>
+                                <p>高能小滴管防晒乳</p>
+                                <p>高能防晒 8倍轻薄</p>
+                                <a href="https://www.yslbeautycn.com/item/000226YSL-001">了解详情</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 香水二级菜单 -->
+                <div class="makeUpSubmenu">
+                    <!-- 菜单 -->
+                    <div class="submenuTop">
+                        <ul>
+                            <li>女士香水</li>
+                            <li>全新圣罗兰女士香水</li>
+                            <li>反转巴黎香水</li>
+                            <li>黑色奥飘茗香水</li>
+                        </ul>
+                        <ul>
+                            <li>男士香水</li>
+                            <li>Y男士香水</li>
+                        </ul>
+                        <ul>
+                            <li>高定香水</li>
+                            <li>衣典香水</li>
+                        </ul>
+                    </div>
+                    <!-- 菜单图片 -->
+                    <div class="submenuButton">
+                        <div class="ImgLeft">
+                            <img src="./static/img/香水.jpg" alt="">
+                            <div>
+                                <p>全新圣罗兰女士香水</p>
+                                <p>刚柔并济 自在由我</p>
+                                <a href="https://www.yslbeautycn.com/item/00395YSL-002">了解详情</a>
+                            </div>
+                        </div>
+                        <div class="ImgRight">
+                            <img src="./static/img/翻转巴黎.jpg" alt="">
+                            <div>
+                                <p>圣罗兰反转巴黎女士香水</p>
+                                <p>爱 就要天翻地覆</p>
+                                <a href="https://www.yslbeautycn.com/item/000422YSL-002">了解详情</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mainWrap">
+        <div class="main">
+            <div class="main-left">
+                <p><a href="index.html">首页</a> > <span>用户登录</span></p>
+                <div class="login-reg1">
+                    <div class="login">
+                        <h3>登录或注册账户</h3>
+                        <div class="login-way">
+                            <a class="way1" href="#">短信验证码登录</a>
+                            <a class="way2" href="#">账号密码登录</a>
+                        </div>
+                        <!-- 手机验证码登录 -->
+                        <form class="form1" action="" style="display: none;">
+                            <input class="ipt" type="text" placeholder="*手机号"><span class="span">请输入有效的手机号</span><br>
+                            <input class="ipt" style="width: 306px;" type="text" placeholder="*验证码"><input class="ipt"
+                                type="text" readonly="readonly" style="width: 60px;height: 30px;"><span
+                                class="span">请输入有效的4位随机验证码</span><br>
+                            <input class="ipt" style="width: 306px;" type="text" placeholder="*短信验证码"><button
+                                style="width: 135px;margin-left: 6px;">发送</button><span class="span">请输入有效的短信验证码</span>
+                        </form>
+                        <!-- 账号密码登录 -->
+                        <form class="form2" action="" style="display: block;">
+                            <p>您的手机<span>*</span></p>
+                            <input id="inputUsername" class="ipt" type="text"><span class="span">请输入有效的手机号</span>
+                            <p>密码<span>*</span></p>
+                            <input id="inputPassword" class="ipt" type="text"><span class="span">请输入正确的密码</span><br>
+                            <input style="width: 20px;height:20px;" type="checkbox"><span
+                                style="line-height: 20px;font-size: 18px;">记住用户名</span>
+                        </form>
+                        <button id="login-btn" class="log">登录</button>
+                        <p>使用第三方账号登录：<img src="./static/img/WeChat.jpg" alt=""><img src="./static/img/Alipay.jpg"
+                                alt=""><img src="./static/img/QQ.jpg" alt=""><img src="./static/img/microblog.jpg"
+                                alt=""></p>
+                    </div>
+                    <div class="reg">
+                        <h4>注册成为圣罗兰官网会员即可尊享</h4>
+                        <ul>
+                            <li>
+                                <p>获取最新商品信息</p>
+                                <span>已注册邮箱将第一时间获取特价促销、<br>新品发布、礼盒套装及更多会员专享资讯。</span>
+                            </li>
+                            <li>
+                                <p>订单历史记录</p>
+                                <span>查看您的订单详情，及时了解物流配送状态。</span>
+                            </li>
+                            <li>
+                                <p>生日礼遇</p>
+                                <span>完善个人生日信息，生日当月发现惊喜，<br>届时请查看已注册邮箱。</span>
+                            </li>
+                            <li>
+                                <p>快速购买通道</p>
+                                <span>我们会在您的账户中保存历史账单和配送信息，<br>使您方便快捷地购物。<br><a href="#">(了解更多隐私政策)</a></span>
+                            </li>
+                        </ul>
+                        <button><a href="reg.html">创建账户</a></button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="main-right">
+                <div class="main-right-bottom">
+                    <div class="title">客户服务</div>
+                    <p>如果有任何问题，请联系我们</p>
+                    <span class="iconfont icon-dianhua">400-820-6362</span>
+                    <p>（周一至周五 9:00-18:00）</p>
+                    <button><a href="#">在线咨询</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer class="section">
+        <div class="footer-topcontent">
+            <ul class="float-clearfix">
+                <li>
+                    <div class="iconfont icon-zhengpin"></div>
+                    <p class="main-text">正品保证</p>
+                    <p class="sub-text">官方直供原装</p>
+                </li>
+                <li>
+                    <div class="iconfont icon-wuliu"></div>
+                    <p class="main-text">免费顺丰速递</p>
+                    <p class="sub-text">
+                        港澳台偏远地区除外
+                        <br>
+                        亦可提供普通快递服务
+                    </p>
+
+                </li>
+                <li>
+                    <div class="footer-qr">
+                        <img src="./static/img/9.png" alt="">
+                    </div>
+                    <p class="main-text">高定礼盒</p>
+                    <p class="sub-text">
+                        尊享YSL高定礼盒包装
+                        <br>
+                        甄享官网专属定制服务
+                    </p>
+                </li>
+                <li>
+                    <div class="footer-qr">
+                        <img src="./static/img/8.png" alt="">
+                    </div>
+                    <p class="main-text">关注公众号</p>
+                    <p class="sub-text">了解品牌最新信息</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        618狂欢盛典
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>彩妆</li>
+                    <li>唇部</li>
+                    <li>面部</li>
+                    <li>眼部</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>护肤</li>
+                    <li>按产品分类</li>
+                    <li>按功能分类</li>
+                    <li>按系列分类</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>香水</li>
+                    <li>女士香水</li>
+                    <li>男士香水</li>
+                    <li>高定香水</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <p>限定礼盒</p>
+                <p>订阅电子杂志</p>
+                <div class="footer-input">
+                    <input type="text"><span>ok</span>
+                </div>
+                <div class="footer-contact">
+                    <p>关注我们</p>
+                    <span class="iconfont icon-unie61d-copy"></span>
+                    <span class="iconfont icon-weixin"></span>
+                    <p>联系我们</p>
+                    <p>
+                        电话：400-820-6362
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-logo">
+            <img src="./static/img/download.png" alt="">
+        </div>
+        <div class="footer-bottom">
+            <p>国家药监局提示您：宣称用于祛斑美白、防晒、染发、烫发等的化妆品为特殊用途化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的标准文号。</p>
+            <ul class="statement">
+                <li>© 欧莱雅（中国）有限公司</li>
+                <li>
+                    <a href="http://wap.scjgj.sh.gov.cn//businessCheck/verifKey.do?showType=extShow&serial=9031000020170518090333000001788070-SAIC_SHOW_310000-2012"
+                        target="_blank">中国工商</a>
+                </li>
+                <li>
+                    <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">沪ICP备08100043号-28</a>
+                </li>
+                <li>
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001529"
+                        target="_blank">沪公网安备 31010602001529号</a>
+                </li>
+            </ul>
+            <ul class="statement">
+                <li>
+                    <a href="https://policy.lorealchina.com/cookiespolicy" target="_blank">Cookies政策</a>
+                </li>
+                <li>
+                    <a href="https://policy.lorealchina.com/termsofusewebsite" target="_blank">使用条款</a>
+                </li>
+                <li>
+                    <a href="https://policy.lorealchina.com/privacypolicy" target="_blank">隐私政策</a>
+                </li>
+                <li>
+                    <a href="https://www.yslbeautycn.com/on/Sites-ysl-cn-Site/zh_CN/SiteMap-Start"
+                        target="_blank">网站地图</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script
+        src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
+
+</body>
+
+</html>

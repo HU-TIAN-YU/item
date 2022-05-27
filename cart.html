@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./static/javascripts/axios.min.js"></script>
+    <link rel="stylesheet" href="./static/font/iconfont.css">
+
+<body>
+    <header class="section">
+        <p class="TopInformation">
+            6.1-6.20 YSL618狂欢正当时，年中盛宴热卖星品至高叠享10件礼
+        </p>
+    </header>
+    <div id="cart-headerWrap">
+        <div class="cart-header">
+            <img src="./static/img/download.png" alt="">
+            <span class="callme">如果你需要帮助<br>请拨打400-820-6362(9：00-18：00)</span>
+        </div>
+    </div>
+    <div id="mainWrap">
+        <a href="details.html">
+            << 继续购物</a>
+                <div class="main">
+                    <div class="cart">
+                        <h1>购物袋</h1>
+                        <table class="cart-list">
+                            <thead>
+                                <tr>
+                                    <th><input class="all-ipt" type="checkbox"></th>
+                                    <th>全选</th>
+                                    <th>商品信息</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                    <th>总计</th>
+                                </tr>
+                            </thead>
+                            <tbody id="plist">
+                                <!-- <tr>
+                            <td><input class="check" type="checkbox"></td>
+                            <td><img src="../img/middle (4).jpg" alt=""></td>
+                            <td>name<button data-pid="${pObj.pid}" type="button"
+                                    class="btn btn-danger del-btn">删除</button></td>
+                            <td>price</td>
+                            <td>
+                                <div class="num">
+                                    <button onclick="minus()" class="minus">-</button>
+                                    <input type="text" value="1" id="amount">
+                                    <button onclick="add()" class="add">+</button>
+                                </div>
+                            </td>
+                            <td>pprice</td>
+                        </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="money">
+                        <div class="dingdan">
+                            <h3>订单总结</h3>
+                            <button>立即结算</button>
+                            <ul>
+                                <li>
+                                    <span>商品价格</span>
+                                    <span class="d-price">￥</span>
+                                </li>
+                                <li>
+                                    <span>优惠价格</span>
+                                    <span>￥0</span>
+                                </li>
+                                <li>
+                                    <span>运费</span>
+                                    <span>￥0</span>
+                                </li>
+                                <li>
+                                    <span>总价</span>
+                                    <span class="zong">￥</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <footer class="section">
+        <div class="footer-topcontent">
+              <ul class="float-clearfix">
+                    <li>
+                          <div class="iconfont icon-zhengpin"></div>
+                          <p class="main-text">正品保证</p>
+                          <p class="sub-text">官方直供原装</p>
+                    </li>
+                    <li>
+                          <div class="iconfont icon-wuliu"></div>
+                          <p class="main-text">免费顺丰速递</p>
+                          <p class="sub-text">
+                                港澳台偏远地区除外
+                                <br>
+                                亦可提供普通快递服务
+                          </p>
+
+                    </li>
+                    <li>
+                          <div class="footer-qr">
+                                <img src="./static/img/9.png" alt="">
+                          </div>
+                          <p class="main-text">高定礼盒</p>
+                          <p class="sub-text">
+                                尊享YSL高定礼盒包装
+                                <br>
+                                甄享官网专属定制服务
+                          </p>
+                    </li>
+                    <li>
+                          <div class="footer-qr">
+                                <img src="./static/img/8.png" alt="">
+                          </div>
+                          <p class="main-text">关注公众号</p>
+                          <p class="sub-text">了解品牌最新信息</p>
+                    </li>
+              </ul>
+        </div>
+        <div class="footer-content">
+              <div class="footer-nav">
+                    <ul>
+                          <li>
+                                618狂欢盛典
+                          </li>
+                    </ul>
+              </div>
+              <div class="footer-nav">
+                    <ul>
+                          <li>彩妆</li>
+                          <li>唇部</li>
+                          <li>面部</li>
+                          <li>眼部</li>
+                    </ul>
+              </div>
+              <div class="footer-nav">
+                    <ul>
+                          <li>护肤</li>
+                          <li>按产品分类</li>
+                          <li>按功能分类</li>
+                          <li>按系列分类</li>
+                    </ul>
+              </div>
+              <div class="footer-nav">
+                    <ul>
+                          <li>香水</li>
+                          <li>女士香水</li>
+                          <li>男士香水</li>
+                          <li>高定香水</li>
+                    </ul>
+              </div>
+              <div class="footer-nav">
+                    <p>限定礼盒</p>
+                    <p>订阅电子杂志</p>
+                    <div class="footer-input">
+                          <input type="text"><span>ok</span>
+                    </div>
+                    <div class="footer-contact">
+                          <p>关注我们</p>
+                          <span class="iconfont icon-unie61d-copy"></span>
+                          <span class="iconfont icon-weixin"></span>
+                          <p>联系我们</p>
+                          <p>
+                                电话：400-820-6362
+                          </p>
+                    </div>
+              </div>
+
+        </div>
+        <div class="footer-logo">
+              <img src="./static/img/download.png" alt="">
+        </div>
+        <div class="footer-bottom">
+              <p>国家药监局提示您：宣称用于祛斑美白、防晒、染发、烫发等的化妆品为特殊用途化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的标准文号。</p>
+              <ul class="statement">
+                    <li>© 欧莱雅（中国）有限公司</li>
+                    <li>
+                          <a href="http://wap.scjgj.sh.gov.cn//businessCheck/verifKey.do?showType=extShow&serial=9031000020170518090333000001788070-SAIC_SHOW_310000-2012"
+                                target="_blank">中国工商</a>
+                    </li>
+                    <li>
+                          <a href="https://beian.miit.gov.cn/#/Integrated/index"
+                                target="_blank">沪ICP备08100043号-28</a>
+                    </li>
+                    <li>
+                          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001529"
+                                target="_blank">沪公网安备 31010602001529号</a>
+                    </li>
+              </ul>
+              <ul class="statement">
+                    <li>
+                          <a href="https://policy.lorealchina.com/cookiespolicy" target="_blank">Cookies政策</a>
+                    </li>
+                    <li>
+                          <a href="https://policy.lorealchina.com/termsofusewebsite" target="_blank">使用条款</a>
+                    </li>
+                    <li>
+                          <a href="https://policy.lorealchina.com/privacypolicy" target="_blank">隐私政策</a>
+                    </li>
+                    <li>
+                          <a href="https://www.yslbeautycn.com/on/Sites-ysl-cn-Site/zh_CN/SiteMap-Start"
+                                target="_blank">网站地图</a>
+                    </li>
+              </ul>
+        </div>
+  </footer>
+
+    <script
+        src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
+
+</body>
+
+</html>
