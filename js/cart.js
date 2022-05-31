@@ -287,6 +287,7 @@ class Cart {
         }
 
     }
+    
     //获取节点
     $(tag) {
         let res = document.querySelectorAll(tag);

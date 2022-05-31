@@ -124,7 +124,20 @@ header .TopInformation {
   width: 100px;
   color: black;
   cursor: pointer;
+  position: relative;
 }
+
+.header-container .header-containerLeft .header-containerRight .outLogin {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+.header-container .header-containerLeft .header-containerRight li:nth-last-child(2) {
+  height: 50px;
+  /* background-color: red; */
+}
+
 
 .header-container .header-containerLeft .header-containerRight li:nth-last-child(1) {
   width: 150px;
@@ -164,14 +177,20 @@ header .TopInformation {
   height: 50px;
 }
 
+nav {
+  width: 100%;
+  z-index: 1000;
+}
+
 nav .navSlide {
   background-color: #fff;
   width: 100%;
   z-index: 111;
+  position: relative;
 }
 
 nav .navSlide .navbox {
-  height: 50px;
+  height: 60px;
   border-top: 1px solid #ddd;
   background-color: #fff;
   width: 100%;
@@ -241,6 +260,7 @@ nav .navSlide .makeUpSubmenu {
   position: absolute;
   background-color: #fff;
   display: none;
+  top: 60px;
 }
 
 nav .navSlide .makeUpSubmenu .submenuTop ul {
@@ -259,7 +279,7 @@ nav .navSlide .makeUpSubmenu .submenuTop ul li:nth-of-type(1) {
 }
 
 nav .navSlide .makeUpSubmenu .submenuButton {
-  width: 100%;
+  /* width: 100%; */
   background-color: #f2f2f2;
   padding: 30px;
   float: left;
@@ -269,6 +289,13 @@ nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft {
   float: left;
   padding: 30px;
   margin: 0 30px;
+}
+
+nav .navSlide .makeUpSubmenu .submenuButton p {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div {
@@ -404,6 +431,7 @@ main .magnifying .magnifyingLeft {
   padding: 28px 10px;
   margin-right: 8%;
 }
+
 main .magnifying .magnifyingLeft ul li {
   height: 74px;
   width: 74px;

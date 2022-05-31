@@ -132,9 +132,14 @@
 #mainWrap .main .main-left form .ys {
   font-size: 16px;
   line-height: 50px;
+  text-decoration: none;
 }
 
-#mainWrap .main .main-left form button {
+#mainWrap .main .main-left form .ok {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 60px;
   width: 174px;
   height: 60px;
   background-color: #000;

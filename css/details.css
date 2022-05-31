@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ a {
 body {
   position: relative;
 }
+
 body header .TopInformation {
   width: 100%;
   height: 35px;
@@ -24,14 +26,17 @@ body header .TopInformation {
   text-align: center;
   line-height: 35px;
 }
+
 body .header-container {
   text-align: center;
 }
+
 body .header-container .header-containerLeft {
   display: flex;
   justify-content: space-between;
   margin: 0 30px;
 }
+
 body .header-container .header-containerLeft ul {
   height: 25px;
   margin: 10px 0;
@@ -39,11 +44,13 @@ body .header-container .header-containerLeft ul {
   line-height: 25px;
   text-align: center;
 }
+
 body .header-container .header-containerLeft ul li {
   width: 100px;
   font-size: 12px;
   color: #999;
 }
+
 body .header-container .header-containerLeft ul li span {
   line-height: 25px;
   padding: 5px;
@@ -51,9 +58,11 @@ body .header-container .header-containerLeft ul li span {
   display: inline-block;
   height: 25px;
 }
+
 body .header-container .header-containerLeft ul li a {
   color: #999;
 }
+
 body .header-container .header-containerLeft ul .callBox {
   width: 660px;
   padding: 30px;
@@ -66,10 +75,12 @@ body .header-container .header-containerLeft ul .callBox {
   left: 180px;
   display: none;
 }
+
 body .header-container .header-containerLeft ul .callBox .callLeft {
   width: 330px;
   float: left;
 }
+
 body .header-container .header-containerLeft ul .callBox .callLeft h4 {
   font-size: 18px;
   border-bottom: 1px solid #d9d9d9;
@@ -77,42 +88,49 @@ body .header-container .header-containerLeft ul .callBox .callLeft h4 {
   margin-bottom: 20px;
   font-weight: 700;
 }
+
 body .header-container .header-containerLeft ul .callBox .callLeft .callButton {
   display: flex;
   justify-content: space-around;
 }
+
 body .header-container .header-containerLeft ul .callBox .callLeft .callButton p {
   font-size: 14px;
 }
+
 body .header-container .header-containerLeft ul .callBox .callLeft .callButton p a:hover {
   text-decoration: underline;
 }
-body .header-container .header-containerLeft ul .callBox .callRight {
-  width: 240px;
-  margin-left: 30px;
-  float: left;
-}
-body .header-container .header-containerLeft ul .callBox .callRight h4 {
-  font-size: 18px;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-body .header-container .header-containerLeft ul .callBox .callRight div p {
-  font-size: 14px;
-}
+
+
+
 body .header-container .header-containerLeft ul .callBox .callRight div p a:hover {
   text-decoration: underline;
 }
-body .header-container .header-containerLeft .header-containerRight li {
+
+.header-container .header-containerLeft .header-containerRight li {
   width: 100px;
   color: black;
   cursor: pointer;
+  position: relative;
 }
+
+.header-container .header-containerLeft .header-containerRight .outLogin {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+
+.header-container .header-containerLeft .header-containerRight li:nth-last-child(2) {
+  height: 50px;
+  /* background-color: red; */
+}
+
 body .header-container .header-containerLeft .header-containerRight li:nth-last-child(1) {
   width: 150px;
 }
+
 body .header-container .header-containerLeft .header-attention {
   padding: 15px 15px 8px;
   background-color: #111;
@@ -123,36 +141,50 @@ body .header-container .header-containerLeft .header-attention {
   box-shadow: 0px 0px 10px #ddd;
   display: none;
 }
+
 body .header-container .header-containerLeft .header-attention div {
   float: left;
 }
+
 body .header-container .header-containerLeft .header-attention div img {
   width: 130px;
 }
+
 body .header-container .header-containerLeft .header-attention div p {
   color: #fff;
   font-size: 12px;
 }
+
 body .header-container .logo {
   text-align: center;
   padding: 20px 0;
 }
+
 body .header-container .logo img {
   width: 283px;
   height: 50px;
 }
+
+nav {
+  width: 100%;
+  z-index: 1000;
+}
+
 body nav .navSlide {
   background-color: #fff;
   width: 100%;
   z-index: 111;
+  position: relative;
 }
+
 body nav .navSlide .navbox {
-  height: 50px;
+  height: 60px;
   border-top: 1px solid #ddd;
   background-color: #fff;
   width: 100%;
   z-index: 100;
 }
+
 body nav .navSlide .navbox .nav {
   padding: 20px 30px;
   width: 820px;
@@ -161,15 +193,18 @@ body nav .navSlide .navbox .nav {
   float: left;
   position: static;
 }
+
 body nav .navSlide .navbox .nav li {
   flex: 1;
   font-size: 14px;
   color: #000;
   cursor: pointer;
 }
+
 body nav .navSlide .navbox .nav li:hover {
   color: #cd9864;
 }
+
 body nav .navSlide .navbox .navRight {
   float: right;
   width: 280px;
@@ -179,6 +214,7 @@ body nav .navSlide .navbox .navRight {
   border: 1px solid #000;
   position: relative;
 }
+
 body nav .navSlide .navbox .navRight .search input {
   border: 0;
   width: 225px;
@@ -187,6 +223,7 @@ body nav .navSlide .navbox .navRight .search input {
   margin-left: 10px;
   float: left;
 }
+
 body nav .navSlide .navbox .navRight .search #list {
   position: absolute;
   z-index: 666;
@@ -195,6 +232,7 @@ body nav .navSlide .navbox .navRight .search #list {
   width: 225px;
   background: rgba(247, 244, 244, 0.5);
 }
+
 body nav .navSlide .navbox .navRight .search span {
   display: inline-block;
   background-color: #000;
@@ -203,81 +241,84 @@ body nav .navSlide .navbox .navRight .search span {
   width: 45px;
   line-height: 40px;
 }
+
 body nav .navSlide .makeUpSubmenu {
   width: 100%;
   z-index: 10;
   position: absolute;
   background-color: #fff;
   display: none;
+  top: 60px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuTop ul {
   float: left;
   width: 130px;
   margin: 20px 50px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuTop ul li {
   padding: 5px 0 0 0;
   font-size: 14px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuTop ul li:nth-of-type(1) {
   font-weight: 700;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton {
-  width: 100%;
+  /* width: 100%; */
   background-color: #f2f2f2;
   padding: 30px;
   float: left;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft {
   float: left;
   padding: 30px;
   margin: 0 30px;
 }
-body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div {
-  margin: 20px 30px;
-  float: right;
-}
-body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p {
-  font-size: 14px;
-}
-body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p:nth-of-type(1) {
+
+nav .navSlide .makeUpSubmenu .submenuButton p {
   font-weight: 700;
   font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
 }
-body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p:nth-of-type(2) {
-  margin-bottom: 20px;
-}
-body nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div a {
-  font-size: 14px;
-  text-decoration: underline;
-}
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight {
   padding: 30px;
   float: left;
   margin-left: 100px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div {
   margin: 20px 30px;
   float: right;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p {
   font-size: 14px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p:nth-of-type(1) {
   font-weight: 700;
   font-size: 16px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p:nth-of-type(2) {
   margin-bottom: 20px;
 }
+
 body nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
   font-size: 14px;
   text-decoration: underline;
 }
-body #swiper {
+
+#swiper {
   width: 99%;
   height: 500px;
-  margin: 0 auto;
+  margin: 10px auto;
   --swiper-theme-color: #111;
   /* 设置Swiper风格 */
   --swiper-navigation-color: #111;
@@ -285,35 +326,67 @@ body #swiper {
   --swiper-navigation-size: 14px;
   /* 设置按钮大小 */
 }
-body #swiper .swiper-slide {
+
+#swiper .swiper-slide {
   font-size: 100px;
   line-height: 285px;
   text-align: center;
-  background-color: #fff;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  transition: opacity 1.5s;
 }
-body #swiper .swiper-slide img {
+
+#swiper .swiper-slide-active {
+  opacity: 1;
+  z-index: 6;
+}
+
+#swiper .swiper-slide img {
   width: 100%;
   height: 100%;
 }
-body #swiper .swiper-button-next {
+
+#swiper .swiper-button-next {
+  width: 40px;
+  height: 60px;
+  border-radius: 2px;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+#swiper .swiper-button-prev {
   width: 40px;
   height: 60px;
   background-color: #fff;
 }
-body #swiper .swiper-button-prev {
-  width: 40px;
-  height: 60px;
-  background-color: #fff;
+
+.swiper-pagination {
+  /* background-color: red; */
+  bottom: 10px;
+  left: 0;
+  width: 100%;
 }
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
 body main {
   /* width: 100%; */
   padding: 20px;
 }
+
 body main .boxLeft {
   width: 20%;
   float: left;
   margin-right: 30px;
 }
+
 body main .boxLeft .boxtitle {
   width: 198px;
   border-bottom: 1px solid #e6e5e5;
@@ -322,13 +395,17 @@ body main .boxLeft .boxtitle {
   color: #000;
   margin: 0 auto;
 }
-body main .boxLeft .repertory, body main .boxLeft .serve {
+
+body main .boxLeft .repertory,
+body main .boxLeft .serve {
   width: 198px;
   margin: 0 auto;
   padding: 20px 0;
   border-bottom: 1px solid #e6e5e5;
 }
-body main .boxLeft .repertory p, body main .boxLeft .serve p {
+
+body main .boxLeft .repertory p,
+body main .boxLeft .serve p {
   font-size: 15px;
   color: #000;
   font-family: "微软雅黑", "Microsoft YaHei";
@@ -336,7 +413,9 @@ body main .boxLeft .repertory p, body main .boxLeft .serve p {
   letter-spacing: 1.5px;
   margin-bottom: 10px;
 }
-body main .boxLeft .repertory a, body main .boxLeft .serve a {
+
+body main .boxLeft .repertory a,
+body main .boxLeft .serve a {
   width: 113px;
   height: 34px;
   line-height: 33px;
@@ -346,14 +425,22 @@ body main .boxLeft .repertory a, body main .boxLeft .serve a {
   font-size: 12px;
   display: inline-block;
 }
-body main .boxLeft .classify, body main .boxLeft .catena, body main .boxLeft .price, body main .boxLeft .specification {
+
+body main .boxLeft .classify,
+body main .boxLeft .catena,
+body main .boxLeft .price,
+body main .boxLeft .specification {
   width: 198px;
   margin: 0 auto;
   padding: 20px 0;
   height: 30px;
   border-bottom: 1px solid #e6e5e5;
 }
-body main .boxLeft .classify p, body main .boxLeft .catena p, body main .boxLeft .price p, body main .boxLeft .specification p {
+
+body main .boxLeft .classify p,
+body main .boxLeft .catena p,
+body main .boxLeft .price p,
+body main .boxLeft .specification p {
   font-size: 15px;
   color: #000;
   font-family: "微软雅黑", "Microsoft YaHei";
@@ -364,11 +451,16 @@ body main .boxLeft .classify p, body main .boxLeft .catena p, body main .boxLeft
   margin-right: 100px;
   padding-top: 10px;
 }
-body main .boxLeft .classify span, body main .boxLeft .catena span, body main .boxLeft .price span, body main .boxLeft .specification span {
+
+body main .boxLeft .classify span,
+body main .boxLeft .catena span,
+body main .boxLeft .price span,
+body main .boxLeft .specification span {
   font-size: 30px;
   float: left;
   cursor: pointer;
 }
+
 body main .boxLeft .resetting {
   width: 113px;
   height: 34px;
@@ -380,26 +472,32 @@ body main .boxLeft .resetting {
   display: inline-block;
   margin: 10px 50px;
 }
+
 body main .boxRight {
   width: 75%;
   float: left;
 }
+
 body main .boxRight .tab {
   width: 100%;
   border-bottom: 1px solid #e6e5e5;
   padding: 15px 0;
 }
+
 body main .boxRight .tab .tabword {
   width: 30%;
   padding: 0 20px;
   display: inline-block;
 }
+
 body main .boxRight .tab .tabword ul {
   padding-top: 20px;
 }
+
 body main .boxRight .tab .tabword ul li {
   display: inline-block;
 }
+
 body main .boxRight .tab .tabword ul li:nth-last-child(1)::before {
   padding: 0 4px;
   content: ">";
@@ -407,14 +505,17 @@ body main .boxRight .tab .tabword ul li:nth-last-child(1)::before {
   color: #999;
   font-size: 14px;
 }
+
 body main .boxRight .tab .tabword ul li a {
   color: #999;
   font-size: 12px;
 }
+
 body main .boxRight .tab .product {
   display: inline-block;
   margin-left: 350px;
 }
+
 body main .boxRight .tab .product .product-num {
   display: inline-block;
   vertical-align: middle;
@@ -423,10 +524,12 @@ body main .boxRight .tab .product .product-num {
   font-size: 14px;
   color: #000;
 }
+
 body main .boxRight .tab .product .select {
   height: 42px;
   display: inline-block;
 }
+
 body main .boxRight .tab .product .select a {
   width: 180px;
   line-height: 40px;
@@ -436,9 +539,11 @@ body main .boxRight .tab .product .select a {
   color: #000;
   display: inline-block;
 }
+
 body main .boxRight .tab .product .select a span {
   font-size: 14px;
 }
+
 body main .boxRight .tab .product .select a span:nth-last-child(1) {
   margin-left: 80px;
   font-size: 12px;
@@ -447,9 +552,11 @@ body main .boxRight .tab .product .select a span:nth-last-child(1) {
   width: 20px;
   text-align: center;
 }
+
 body main .boxRight .perfume {
   padding: 20px 0;
 }
+
 body main .boxRight .perfume div {
   box-sizing: border-box;
   width: 22%;
@@ -458,11 +565,14 @@ body main .boxRight .perfume div {
   text-align: center;
   height: 400px;
 }
+
 body main .boxRight .perfume div img {
   width: 212px;
   height: 236px;
 }
-body main .boxRight .perfume div .perfumeEn, body main .boxRight .perfume div .perfumeCn {
+
+body main .boxRight .perfume div .perfumeEn,
+body main .boxRight .perfume div .perfumeCn {
   font-size: 14px;
   color: #000;
   line-height: 20px;
@@ -471,6 +581,7 @@ body main .boxRight .perfume div .perfumeEn, body main .boxRight .perfume div .p
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 body main .boxRight .perfume div .perfumePrice {
   font-size: 14px;
   color: #000;
@@ -478,6 +589,7 @@ body main .boxRight .perfume div .perfumePrice {
   margin: 10px 0;
   font-weight: 700;
 }
+
 body main .boxRight .perfume div .button {
   display: inline-block;
   width: 123px;
@@ -486,15 +598,18 @@ body main .boxRight .perfume div .button {
   color: #fff;
   line-height: 36px;
 }
+
 body footer {
   width: 100%;
 }
+
 body footer .footer-topcontent {
   width: 100%;
   height: 175px;
   background-color: #000;
   overflow: hidden;
 }
+
 body footer .footer-topcontent .float-clearfix {
   width: 95%;
   height: 154px;
@@ -503,12 +618,14 @@ body footer .footer-topcontent .float-clearfix {
   display: flex;
   position: relative;
 }
+
 body footer .footer-topcontent .float-clearfix li {
   width: 25%;
   text-align: center;
   padding: 10px 0;
   color: #fff;
 }
+
 body footer .footer-topcontent .float-clearfix li div {
   width: 89px;
   height: 64px;
@@ -516,21 +633,25 @@ body footer .footer-topcontent .float-clearfix li div {
   margin: 0 auto;
   font-size: 50px;
 }
+
 body footer .footer-topcontent .float-clearfix li div img {
   width: 50px;
   height: 40px;
   vertical-align: middle;
   margin-top: -10px;
 }
+
 body footer .footer-topcontent .float-clearfix li .main-text {
   font-size: 12px;
   margin: 10px 0;
   color: white;
 }
+
 body footer .footer-topcontent .float-clearfix li .sub-text {
   font-size: 12px;
   color: #999;
 }
+
 body footer .footer-topcontent .float-clearfix li::after {
   content: "";
   width: 1px;
@@ -540,11 +661,13 @@ body footer .footer-topcontent .float-clearfix li::after {
   position: absolute;
   top: 25px;
 }
+
 body footer .footer-topcontent .float-clearfix li:nth-of-type(1)::after {
   content: "";
   width: 1px;
   height: 0px;
 }
+
 body footer .footer-content {
   width: 90%;
   padding: 34px 66px;
@@ -552,31 +675,38 @@ body footer .footer-content {
   display: flex;
   justify-content: space-evenly;
 }
+
 body footer .footer-content .footer-nav {
   width: 230px;
 }
+
 body footer .footer-content .footer-nav ul li {
   font-size: 14px;
   margin-bottom: 15px;
   color: #000;
 }
-body footer .footer-content .footer-nav ul li + li {
+
+body footer .footer-content .footer-nav ul li+li {
   color: #999;
 }
+
 body footer .footer-content .footer-nav p {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
 body footer .footer-content .footer-nav .footer-input {
   border: 1px solid #999;
   box-sizing: border-box;
   position: relative;
 }
+
 body footer .footer-content .footer-nav .footer-input input {
   border: none;
   height: 26px;
   padding: 5px 30px 5px 9px;
 }
+
 body footer .footer-content .footer-nav .footer-input span {
   width: 34px;
   line-height: 36px;
@@ -588,57 +718,104 @@ body footer .footer-content .footer-nav .footer-input span {
   position: absolute;
   right: 0;
 }
+
 body footer .footer-content .footer-nav .footer-contact {
   margin-top: 20px;
 }
+
 body footer .footer-content .footer-nav .footer-contact p {
   font-size: 14px;
   margin-bottom: 10px;
   color: #000;
 }
+
 body footer .footer-content .footer-nav .footer-contact span {
   display: inline-block;
   font-size: 20px;
   margin: 0px 10px 20px 0;
 }
+
 body footer .footer-logo {
   width: 436px;
   height: 78px;
   margin: 30px auto;
 }
+
 body footer .footer-logo img {
   width: 100%;
   height: 100%;
 }
+
 body footer .footer-bottom {
   /* width: 100%; */
   background-color: #f2f2f2;
   padding: 36px 40px 48px;
   text-align: center;
 }
+
 body footer .footer-bottom p {
   font-size: 12px;
   margin-bottom: 10px;
 }
+
 body footer .footer-bottom .statement {
   display: flex;
   width: 45%;
   margin: 0 auto;
 }
+
 body footer .footer-bottom .statement li {
   font-size: 12px;
   margin: 5px 10px;
 }
+
 body footer .footer-bottom .statement li a {
   text-decoration: none;
   color: #000;
 }
+
 body footer .footer-bottom .statement li a:hover {
   text-decoration: underline;
 }
+
 body footer .footer-bottom .statement:nth-last-of-type(1) {
   width: 30%;
 }
+
 body footer .footer-bottom .statement:nth-last-of-type(1) li {
   flex: 1;
+}
+
+aside {
+  width: 64px;
+  /* background-color: antiquewhite; */
+  z-index: 999;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  margin-right: 20px;
+  display: none;
+}
+
+aside div {
+  padding: 20px 0;
+  /* border-bottom: 1px #636363 solid; */
+  text-align: center;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+aside div:nth-last-child(1) {
+  margin-bottom: 0;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+aside div span {
+  color: azure;
+}
+
+aside div p {
+  font-size: 14px;
+  color: azure;
 }

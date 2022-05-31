@@ -3,12 +3,77 @@ class Details {
         this.getInfo();
         this.bindEve();
         this.bigPic();
+        this.bindTwo();
     }
     //绑定事件
     bindEve() {
         //给加入购物车添加点击事件
         // console.log(this.$('.join'));
         this.$('.join').addEventListener('click', this.checkLogin.bind(this));
+        //window的滚轮滑动事件
+        window.addEventListener('scroll', this.navTop.bind(this));
+
+        //显示用户名 判断是否登录
+        window.addEventListener('load', this.isLogin.bind(this));
+
+        //退出登录
+        this.$('.outLogin').addEventListener('click', this.outLogin.bind(this));
+    }
+    isLogin() {
+        //判断是否登录 如果已登录就显示用户信息在页面右上角
+        let token = localStorage.getItem('token');
+        // console.log(token);
+        if (token) {
+            // console.log('已经登录');
+            //获取登录的用户名
+            let username = sessionStorage.getItem('user_name');
+            // console.log(username);
+            //把用户名显示到右上角 
+            this.$('.login').innerHTML = username;
+            this.$('.liTwo').onmouseover = () => {
+                this.$('.outLogin').style.display = 'block';
+            }
+            this.$('.liTwo').onmouseout = () => {
+                this.$('.outLogin').style.display = 'none';
+            }
+        }
+    }
+    //退出登录
+    outLogin() {
+        // console.log('退出');
+        // console.log(this);
+        let self = this;
+        //检测是否登录
+        let token = localStorage.getItem('token');
+        if (token) {
+            let uId = localStorage.getItem('user_id');
+            // console.log(uId);
+            //发送退出请求
+            axios.get('http://localhost:8888/users/logout?id=' + uId).then(({ data, status }) => {
+                // console.log(res);
+                if (status == 200 && data.code == 1) {
+                    layer.open({
+                        title: '退出',
+                        content: '确定退出登录吗',
+                        btn: ['确定', '取消'],
+                        yes: function (index, layero) {
+                            console.log(self);
+                            //清除localStorage中的token个userId
+                            localStorage.removeItem('token');
+                            localStorage.removeItem('user_id');
+                            sessionStorage.removeItem('user_name');
+                            //换成登录选项
+                            self.$('.login a').innerHTML = `<a href="./login.html?ReturnUrl=./index.html" style="color: black;">登录与注册</a>`;
+                            //删除退出文本
+                            self.$('.outLogin').remove();
+                            //刷新页面
+                            location.reload();
+                        }
+                    })
+
+                }
+            })
+        }
     }
     //放大镜
     bigPic() {
@@ -142,12 +207,62 @@ class Details {
                 //清除localStorage中的token个userId
                 localStorage.removeItem('token');
                 localStorage.removeItem('user_id');
+                sessionStorage.removeItem('user_name');
                 //跳转到登录页面  回跳当前页面
                 location.assign('./login.html?ReturnUrl=./details.html');
             }
         })
     }
-
+    //导航栏吸顶
+    navTop() {
+        // console.log(document.documentElement.scrollTop);
+        // console.log(this.$('nav'));
+        let top = document.documentElement.scrollTop;
+        if (top >= 180) {
+            this.$('nav').style.position = 'fixed';
+            this.$('nav').style.top = 0;
+        } else {
+            this.$('nav').style.position = 'relative';
+        }
+    }
+    //二级菜单绑定
+    bindTwo() {
+        //二级菜单的移入移出
+        this.$('.btn1').addEventListener('mouseover', this.mouseOver1.bind(this));
+        this.$('.btn1').addEventListener('mouseout', this.mouseOut1.bind(this));
+        this.$('.btn2').addEventListener('mouseover', this.mouseOver2.bind(this));
+        this.$('.btn2').addEventListener('mouseout', this.mouseOut2.bind(this));
+        this.$('.btn3').addEventListener('mouseover', this.mouseOver3.bind(this));
+        this.$('.btn3').addEventListener('mouseout', this.mouseOut3.bind(this));
+    }
+    //二级菜单显示
+    mouseOver1() {
+        // console.log(111);
+        //显示出来
+        this.$('.makeUpSubmenu1').style.display = 'block';
+    }
+    mouseOut1() {
+        //隐藏
+        this.$('.makeUpSubmenu1').style.display = 'none';
+    }
+    mouseOver2() {
+        // console.log(111);
+        //显示出来
+        this.$('.makeUpSubmenu2').style.display = 'block';
+    }
+    mouseOut2() {
+        //隐藏
+        this.$('.makeUpSubmenu2').style.display = 'none';
+    }
+    mouseOver3() {
+        // console.log(111);
+        //显示出来
+        this.$('.makeUpSubmenu3').style.display = 'block';
+    }
+    mouseOut3() {
+        //隐藏
+        this.$('.makeUpSubmenu3').style.display = 'none';
+    }
     //获取节点
     $(tag) {
         let res = document.querySelectorAll(tag);
