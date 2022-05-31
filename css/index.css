@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 ul li {
   list-style: none;
 }
@@ -822,23 +821,27 @@ footer .footer-bottom .statement:nth-last-of-type(1) li {
 
 aside {
   width: 64px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   z-index: 999;
   position: fixed;
-  bottom: 200px;
+  bottom: 100px;
   right: 0;
+  margin-right: 20px;
   display: none;
 }
 
 aside div {
-  padding: 25px 0;
-  border-bottom: 1px #636363 solid;
+  padding: 20px 0;
+  /* border-bottom: 1px #636363 solid; */
   text-align: center;
   background-color: black;
+  margin-bottom: 10px;
 }
 
 aside div:nth-last-child(1) {
-  border-bottom: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: 1px solid black;
 }
 
 aside div span {
@@ -851,12 +854,14 @@ aside div p {
 }
 
 .stairs {
-  width: 90px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   left: 0;
   top: 500px;
   margin-left: 20px;
   z-index: 999;
+  display: none;
 }
 
 .stairs li {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
+    <link rel="Shortcut Icon" href="https://res.yslbeautycn.com/favicon.ico">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/lens.css">
     <script src="./static/javascripts/axios.min.js"></script>
@@ -87,7 +88,7 @@
             </div>
             <!-- logo -->
             <div class="logo">
-                <img src="./static/img/download.png" alt="">
+                <a href="./index.html"><img src="./static/img/download.png" alt=""></a>
             </div>
         </div>
     </header>
@@ -96,16 +97,12 @@
         <div class="navSlide">
             <div class="navbox">
                 <ul class="nav">
-                    <li><a href="./index.html">
+                    <li><a href="./list.html">
                             618狂欢盛典
                         </a></li>
                     <li class="btn">彩妆</li>
                     <li class="btn">护肤</li>
-                    <li class="btn">
-                        <a href="./list.html">
-                            香水
-                        </a>
-                    </li>
+                    <li class="btn">香水</li>
                     <li>限定礼盒</li>
                     <li>定制服务</li>
                     <li>会员中心</li>
@@ -290,9 +287,11 @@
                         <!-- 账号密码登录 -->
                         <form class="form2" action="" style="display: block;">
                             <p>您的账号<span>*</span></p>
-                            <input id="inputUsername" class="ipt" type="text"><span class="span">请输入有效的手机号</span>
+                            <input id="inputUsername" class="ipt" type="text" placeholder="请输入有效的账号"><span
+                                class="span">请输入有效的手机号</span>
                             <p>密码<span>*</span></p>
-                            <input id="inputPassword" class="ipt" type="text"><span class="span">请输入正确的密码</span><br>
+                            <input id="inputPassword" class="ipt" type="password" placeholder="请输入正确的密码"><span
+                                class="span">请输入正确的密码</span><br>
                             <input style="width: 20px;height:20px;" type="checkbox"><span
                                 style="line-height: 20px;font-size: 18px;">记住用户名</span>
                         </form>
@@ -321,7 +320,7 @@
                                 <span>我们会在您的账户中保存历史账单和配送信息，<br>使您方便快捷地购物。<br><a href="#">(了解更多隐私政策)</a></span>
                             </li>
                         </ul>
-                        <button><a href="reg.html">创建账户</a></button>
+                        <button><a href="./register.html">创建账户</a></button>
                     </div>
                 </div>
                 </form>

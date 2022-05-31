@@ -56,14 +56,27 @@
             height: 130px;
             margin: 30px 20px; }
           #mainWrap .main .cart .cart-list tbody tr td {
-            font-size: 16px; }
+            font-size: 18px;
+            text-align: center; }
+            #mainWrap .main .cart .cart-list tbody tr td .del-btn{
+              width: 40px;
+              height: 30px;
+              margin-left: 10px;
+              border: 1px solid gray;
+
+            }
+            #mainWrap .main .cart .cart-list tbody tr td .check{
+              width: 16px;
+              height: 16px;
+            }
           #mainWrap .main .cart .cart-list tbody tr .num {
             width: 120px;
             height: 40px;
             border: 1px solid #999;
             position: relative;
             display: flex;
-            justify-content: space-between; }
+            justify-content: space-between; 
+           margin: 0 auto;}
             #mainWrap .main .cart .cart-list tbody tr .num input {
               width: 30px;
               height: 40px;

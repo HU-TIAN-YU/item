@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +26,13 @@ header .TopInformation {
 .header-container {
   text-align: center;
 }
+
 .header-container .header-containerLeft {
   display: flex;
   justify-content: space-between;
   margin: 0 30px;
 }
+
 .header-container .header-containerLeft ul {
   height: 25px;
   margin: 10px 0;
@@ -37,11 +40,13 @@ header .TopInformation {
   line-height: 25px;
   text-align: center;
 }
+
 .header-container .header-containerLeft ul li {
   width: 100px;
   font-size: 12px;
   color: #999;
 }
+
 .header-container .header-containerLeft ul li span {
   line-height: 25px;
   padding: 5px;
@@ -49,9 +54,11 @@ header .TopInformation {
   display: inline-block;
   height: 25px;
 }
+
 .header-container .header-containerLeft ul li a {
   color: #999;
 }
+
 .header-container .header-containerLeft ul .callBox {
   width: 660px;
   padding: 30px;
@@ -64,10 +71,12 @@ header .TopInformation {
   left: 180px;
   display: none;
 }
+
 .header-container .header-containerLeft ul .callBox .callLeft {
   width: 330px;
   float: left;
 }
+
 .header-container .header-containerLeft ul .callBox .callLeft h4 {
   font-size: 18px;
   border-bottom: 1px solid #d9d9d9;
@@ -75,21 +84,26 @@ header .TopInformation {
   margin-bottom: 20px;
   font-weight: 700;
 }
+
 .header-container .header-containerLeft ul .callBox .callLeft .callButton {
   display: flex;
   justify-content: space-around;
 }
+
 .header-container .header-containerLeft ul .callBox .callLeft .callButton p {
   font-size: 14px;
 }
+
 .header-container .header-containerLeft ul .callBox .callLeft .callButton p a:hover {
   text-decoration: underline;
 }
+
 .header-container .header-containerLeft ul .callBox .callRight {
   width: 240px;
   margin-left: 30px;
   float: left;
 }
+
 .header-container .header-containerLeft ul .callBox .callRight h4 {
   font-size: 18px;
   border-bottom: 1px solid #d9d9d9;
@@ -97,20 +111,25 @@ header .TopInformation {
   margin-bottom: 20px;
   font-weight: 700;
 }
+
 .header-container .header-containerLeft ul .callBox .callRight div p {
   font-size: 14px;
 }
+
 .header-container .header-containerLeft ul .callBox .callRight div p a:hover {
   text-decoration: underline;
 }
+
 .header-container .header-containerLeft .header-containerRight li {
   width: 100px;
   color: black;
   cursor: pointer;
 }
+
 .header-container .header-containerLeft .header-containerRight li:nth-last-child(1) {
   width: 150px;
 }
+
 .header-container .header-containerLeft .header-attention {
   padding: 15px 15px 8px;
   background-color: #111;
@@ -121,20 +140,25 @@ header .TopInformation {
   box-shadow: 0px 0px 10px #ddd;
   display: none;
 }
+
 .header-container .header-containerLeft .header-attention div {
   float: left;
 }
+
 .header-container .header-containerLeft .header-attention div img {
   width: 130px;
 }
+
 .header-container .header-containerLeft .header-attention div p {
   color: #fff;
   font-size: 12px;
 }
+
 .header-container .logo {
   text-align: center;
   padding: 20px 0;
 }
+
 .header-container .logo img {
   width: 283px;
   height: 50px;
@@ -145,6 +169,7 @@ nav .navSlide {
   width: 100%;
   z-index: 111;
 }
+
 nav .navSlide .navbox {
   height: 50px;
   border-top: 1px solid #ddd;
@@ -152,6 +177,7 @@ nav .navSlide .navbox {
   width: 100%;
   z-index: 100;
 }
+
 nav .navSlide .navbox .nav {
   padding: 20px 30px;
   width: 820px;
@@ -160,15 +186,18 @@ nav .navSlide .navbox .nav {
   float: left;
   position: static;
 }
+
 nav .navSlide .navbox .nav li {
   flex: 1;
   font-size: 14px;
   color: #000;
   cursor: pointer;
 }
+
 nav .navSlide .navbox .nav li:hover {
   color: #cd9864;
 }
+
 nav .navSlide .navbox .navRight {
   float: right;
   width: 280px;
@@ -178,6 +207,7 @@ nav .navSlide .navbox .navRight {
   border: 1px solid #000;
   position: relative;
 }
+
 nav .navSlide .navbox .navRight .search input {
   border: 0;
   width: 225px;
@@ -186,6 +216,7 @@ nav .navSlide .navbox .navRight .search input {
   margin-left: 10px;
   float: left;
 }
+
 nav .navSlide .navbox .navRight .search #list {
   position: absolute;
   z-index: 666;
@@ -194,6 +225,7 @@ nav .navSlide .navbox .navRight .search #list {
   width: 225px;
   background: rgba(247, 244, 244, 0.5);
 }
+
 nav .navSlide .navbox .navRight .search span {
   display: inline-block;
   background-color: #000;
@@ -202,6 +234,7 @@ nav .navSlide .navbox .navRight .search span {
   width: 45px;
   line-height: 40px;
 }
+
 nav .navSlide .makeUpSubmenu {
   width: 100%;
   z-index: 10;
@@ -209,66 +242,82 @@ nav .navSlide .makeUpSubmenu {
   background-color: #fff;
   display: none;
 }
+
 nav .navSlide .makeUpSubmenu .submenuTop ul {
   float: left;
   width: 130px;
   margin: 20px 50px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuTop ul li {
   padding: 5px 0 0 0;
   font-size: 14px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuTop ul li:nth-of-type(1) {
   font-weight: 700;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton {
   width: 100%;
   background-color: #f2f2f2;
   padding: 30px;
   float: left;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft {
   float: left;
   padding: 30px;
   margin: 0 30px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div {
   margin: 20px 30px;
   float: right;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p {
   font-size: 14px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p:nth-of-type(1) {
   font-weight: 700;
   font-size: 16px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div p:nth-of-type(2) {
   margin-bottom: 20px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgLeft div a {
   font-size: 14px;
   text-decoration: underline;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight {
   padding: 30px;
   float: left;
   margin-left: 100px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div {
   margin: 20px 30px;
   float: right;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p {
   font-size: 14px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p:nth-of-type(1) {
   font-weight: 700;
   font-size: 16px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div p:nth-of-type(2) {
   margin-bottom: 20px;
 }
+
 nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
   font-size: 14px;
   text-decoration: underline;
@@ -285,21 +334,25 @@ nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
   --swiper-navigation-size: 14px;
   /* 设置按钮大小 */
 }
+
 #swiper .swiper-slide {
   font-size: 100px;
   line-height: 285px;
   text-align: center;
   background-color: #fff;
 }
+
 #swiper .swiper-slide img {
   width: 100%;
   height: 100%;
 }
+
 #swiper .swiper-button-next {
   width: 40px;
   height: 60px;
   background-color: #fff;
 }
+
 #swiper .swiper-button-prev {
   width: 40px;
   height: 60px;
@@ -311,16 +364,19 @@ nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
   margin-top: 5px;
   border-top: 1px solid #efeded;
 }
+
 .perfumemenu ul {
   margin-left: 30px;
   padding: 20px;
   line-height: 10px;
 }
+
 .perfumemenu ul li {
   float: left;
   color: #999;
   font-size: 12px;
 }
+
 .perfumemenu ul li::after {
   padding: 0 4px;
   content: ">";
@@ -328,6 +384,7 @@ nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
   font-size: 14px;
   padding: 0 10px;
 }
+
 .perfumemenu ul li:nth-last-child(1)::after {
   content: "";
 }
@@ -336,10 +393,12 @@ main {
   height: 650px;
   padding: 10px;
 }
+
 main .magnifying {
   width: 55%;
   float: left;
 }
+
 main .magnifying .magnifyingLeft {
   float: left;
   padding: 28px 10px;
@@ -351,13 +410,16 @@ main .magnifying .magnifyingLeft ul li {
   margin-bottom: 10px;
   border: 1px solid #cdcdcd;
 }
+
 main .magnifying .magnifyingLeft ul li.active {
   border: 1px solid #111;
 }
+
 main .magnifying .magnifyingLeft ul li img {
   width: 100%;
   height: 100%;
 }
+
 main .magnifying .magnifyingBig-img {
   width: 500px;
   height: 500px;
@@ -365,51 +427,72 @@ main .magnifying .magnifyingBig-img {
   position: relative;
   overflow: hidden;
 }
+
 main .magnifying .magnifyingBig-img img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
+main .magnifying .magnifyingBig-img div {
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 0, 0.2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: move;
+  display: none;
+  z-index: 2;
+}
+
 main .magnifying .bigImg {
   width: 500px;
   height: 500px;
   background-color: aqua;
-  border: blueviolet 1px solid;
+  /* border: blueviolet 1px solid; */
   position: absolute;
   left: 700px;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
   display: none;
 }
+
 main .magnifying .bigImg img {
   width: 1000px;
   height: 1000px;
   position: absolute;
 }
+
 main .introduce {
   width: 35%;
   float: left;
   padding: 20px;
 }
+
 main .introduce h2 {
   padding-bottom: 4px;
   font-size: 18px;
   letter-spacing: 0.3px;
   font-weight: 400;
 }
+
 main .introduce h1 {
   padding-bottom: 10px;
   font-size: 24px;
   letter-spacing: 0.25px;
   font-weight: 400;
 }
+
 main .introduce .comment {
   padding-bottom: 25px;
   font-size: 12px;
 }
+
 main .introduce .comment span:nth-last-child(1) {
   color: #999;
 }
+
 main .introduce .recommend {
   position: relative;
   margin: 0;
@@ -418,6 +501,7 @@ main .introduce .recommend {
   color: #999;
   text-align: justify;
 }
+
 main .introduce .recommend span {
   position: absolute;
   right: 0;
@@ -427,18 +511,22 @@ main .introduce .recommend span {
   text-decoration: underline;
   color: #000;
 }
+
 main .introduce .priceCategory {
   padding-top: 24px;
 }
+
 main .introduce .priceCategory .priceThree {
   display: flex;
   flex-wrap: wrap;
 }
+
 main .introduce .priceCategory .priceThree li {
   width: 30%;
   margin-right: 2.6%;
   text-align: center;
 }
+
 main .introduce .priceCategory .priceThree li div {
   margin-bottom: 15px;
   padding: 16px 10px;
@@ -446,38 +534,47 @@ main .introduce .priceCategory .priceThree li div {
   cursor: pointer;
   position: relative;
 }
+
 main .introduce .priceCategory .priceThree li div .perfumeSize {
   font-weight: 900;
   font-size: 14px;
   letter-spacing: 0.75px;
 }
+
 main .introduce .priceCategory .priceThree li div .perfumePrice {
   margin: 0;
   font-size: 12px;
   letter-spacing: 0.75px;
 }
+
 main .introduce .priceCategory .lettering {
   width: 100%;
   height: 20px;
   font-size: 14px;
   margin-top: 20px;
 }
+
 main .introduce .priceCategory .lettering p {
   float: left;
 }
+
 main .introduce .priceCategory .lettering p input {
   margin-right: 10px;
 }
+
 main .introduce .priceCategory .lettering span {
   float: right;
 }
+
 main .introduce .unit-price {
   font-size: 26px;
   margin: 20px 0;
 }
+
 main .introduce .flex-container {
   display: flex;
 }
+
 main .introduce .flex-container .buy {
   display: inline-block;
   width: 130px;
@@ -485,6 +582,7 @@ main .introduce .flex-container .buy {
   vertical-align: top;
   position: relative;
 }
+
 main .introduce .flex-container .buy .minus {
   background: #f2f2f2;
   position: absolute;
@@ -495,6 +593,7 @@ main .introduce .flex-container .buy .minus {
   text-align: center;
   padding: 0 10px;
 }
+
 main .introduce .flex-container .buy input {
   width: 100%;
   height: 45px;
@@ -502,6 +601,7 @@ main .introduce .flex-container .buy input {
   color: #000;
   border: 0;
 }
+
 main .introduce .flex-container .buy .sign {
   position: absolute;
   z-index: 1;
@@ -513,12 +613,15 @@ main .introduce .flex-container .buy .sign {
   top: 0px;
   padding: 0 10px;
 }
+
 main .introduce .flex-container .buy .sign:hover {
   background: #f2f2f2;
 }
+
 main .introduce .flex-container .product-btn {
   text-align: right;
 }
+
 main .introduce .flex-container .product-btn .join {
   display: inline-block;
   text-align: center;
@@ -532,10 +635,12 @@ main .introduce .flex-container .product-btn .join {
   float: left;
   border: 1px solid #111;
 }
+
 main .introduce .flex-container .product-btn .join:hover {
   color: #fff;
   background: #000;
 }
+
 main .introduce .flex-container .product-btn .promptly {
   display: inline-block;
   text-align: center;
@@ -549,6 +654,7 @@ main .introduce .flex-container .product-btn .promptly {
   float: right;
   border: 1px solid #111;
 }
+
 main .introduce .inviting-box {
   position: relative;
   background-color: #000;
@@ -557,6 +663,7 @@ main .introduce .inviting-box {
   padding: 24.5px;
   margin-top: 10px;
 }
+
 main .introduce .inviting-box::after {
   content: "";
   position: absolute;
@@ -566,10 +673,12 @@ main .introduce .inviting-box::after {
   bottom: 10px;
   border: 2px solid #fff;
 }
+
 main .introduce .inviting-box p {
   font-size: 16px;
   margin-bottom: 9px;
 }
+
 main .introduce .inviting-box a {
   text-decoration: underline;
   margin-top: 6px;
@@ -588,11 +697,13 @@ article {
   border-bottom: 1px solid #d9d9d9;
   overflow: hidden;
 }
+
 article .product-details {
   border-bottom: 1px solid #d9d9d9;
   padding: 15px 67px;
   font-size: 18px;
 }
+
 article .product-presentation {
   padding: 30px 67px;
   font-size: 14px;
@@ -601,6 +712,7 @@ article .product-presentation {
 .banner {
   padding: 20px 30px 0px;
 }
+
 .banner img {
   display: block;
 }
@@ -608,15 +720,18 @@ article .product-presentation {
 aside {
   padding: 20px 20px 80px;
 }
+
 aside h3 {
   padding: 40px 0;
   font-size: 30px;
   text-align: center;
 }
+
 aside .perfume {
   height: 500px;
   padding: 20px 0;
 }
+
 aside .perfume div {
   box-sizing: border-box;
   width: 22%;
@@ -626,11 +741,14 @@ aside .perfume div {
   border: 1px solid #d9d9d9;
   padding: 20px;
 }
+
 aside .perfume div img {
   width: 212px;
   height: 236px;
 }
-aside .perfume div .perfumeEn, aside .perfume div .perfumeCn {
+
+aside .perfume div .perfumeEn,
+aside .perfume div .perfumeCn {
   font-size: 14px;
   color: #000;
   line-height: 20px;
@@ -639,6 +757,7 @@ aside .perfume div .perfumeEn, aside .perfume div .perfumeCn {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 aside .perfume div .perfumePrice {
   font-size: 14px;
   color: #000;
@@ -646,6 +765,7 @@ aside .perfume div .perfumePrice {
   margin: 10px 0;
   font-weight: 700;
 }
+
 aside .perfume div .button {
   display: inline-block;
   width: 123px;
@@ -659,12 +779,14 @@ aside .perfume div .button {
 footer {
   width: 100%;
 }
+
 footer .footer-topcontent {
   width: 100%;
   height: 175px;
   background-color: #000;
   overflow: hidden;
 }
+
 footer .footer-topcontent .float-clearfix {
   width: 95%;
   height: 154px;
@@ -673,12 +795,14 @@ footer .footer-topcontent .float-clearfix {
   display: flex;
   position: relative;
 }
+
 footer .footer-topcontent .float-clearfix li {
   width: 25%;
   text-align: center;
   padding: 10px 0;
   color: #fff;
 }
+
 footer .footer-topcontent .float-clearfix li div {
   width: 89px;
   height: 64px;
@@ -686,21 +810,25 @@ footer .footer-topcontent .float-clearfix li div {
   margin: 0 auto;
   font-size: 50px;
 }
+
 footer .footer-topcontent .float-clearfix li div img {
   width: 50px;
   height: 40px;
   vertical-align: middle;
   margin-top: -10px;
 }
+
 footer .footer-topcontent .float-clearfix li .main-text {
   font-size: 12px;
   margin: 10px 0;
   color: white;
 }
+
 footer .footer-topcontent .float-clearfix li .sub-text {
   font-size: 12px;
   color: #999;
 }
+
 footer .footer-topcontent .float-clearfix li::after {
   content: "";
   width: 1px;
@@ -710,11 +838,13 @@ footer .footer-topcontent .float-clearfix li::after {
   position: absolute;
   top: 25px;
 }
+
 footer .footer-topcontent .float-clearfix li:nth-of-type(1)::after {
   content: "";
   width: 1px;
   height: 0px;
 }
+
 footer .footer-content {
   width: 90%;
   padding: 34px 66px;
@@ -722,31 +852,38 @@ footer .footer-content {
   display: flex;
   justify-content: space-evenly;
 }
+
 footer .footer-content .footer-nav {
   width: 230px;
 }
+
 footer .footer-content .footer-nav ul li {
   font-size: 14px;
   margin-bottom: 15px;
   color: #000;
 }
-footer .footer-content .footer-nav ul li + li {
+
+footer .footer-content .footer-nav ul li+li {
   color: #999;
 }
+
 footer .footer-content .footer-nav p {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
 footer .footer-content .footer-nav .footer-input {
   border: 1px solid #999;
   box-sizing: border-box;
   position: relative;
 }
+
 footer .footer-content .footer-nav .footer-input input {
   border: none;
   height: 26px;
   padding: 5px 30px 5px 9px;
 }
+
 footer .footer-content .footer-nav .footer-input span {
   width: 34px;
   line-height: 37px;
@@ -758,57 +895,70 @@ footer .footer-content .footer-nav .footer-input span {
   position: absolute;
   right: 0;
 }
+
 footer .footer-content .footer-nav .footer-contact {
   margin-top: 20px;
 }
+
 footer .footer-content .footer-nav .footer-contact p {
   font-size: 14px;
   margin-bottom: 10px;
   color: #000;
 }
+
 footer .footer-content .footer-nav .footer-contact span {
   display: inline-block;
   font-size: 20px;
   margin: 0px 10px 20px 0;
 }
+
 footer .footer-logo {
   width: 436px;
   height: 78px;
   margin: 30px auto;
 }
+
 footer .footer-logo img {
   width: 100%;
   height: 100%;
 }
+
 footer .footer-bottom {
   /* width: 100%; */
   background-color: #f2f2f2;
   padding: 36px 40px 48px;
   text-align: center;
 }
+
 footer .footer-bottom p {
   font-size: 12px;
   margin-bottom: 10px;
 }
+
 footer .footer-bottom .statement {
   display: flex;
   width: 45%;
   margin: 0 auto;
 }
+
 footer .footer-bottom .statement li {
   font-size: 12px;
   margin: 5px 10px;
 }
+
 footer .footer-bottom .statement li a {
   text-decoration: none;
   color: #000;
 }
+
 footer .footer-bottom .statement li a:hover {
   text-decoration: underline;
 }
+
 footer .footer-bottom .statement:nth-last-of-type(1) {
   width: 30%;
 }
+
 footer .footer-bottom .statement:nth-last-of-type(1) li {
   flex: 1;
 }
