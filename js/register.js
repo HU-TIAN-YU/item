@@ -7,6 +7,16 @@ class Register {
 
         //绑定点击注册事件
         this.$('.ok').addEventListener('click', this.confirmReg.bind(this));
+
+        this.bindTwo();
+        //得到回调地址
+        let search = location.search;
+        // console.log(search);
+        //以=为分隔符分割
+        if (search) {
+            this.url = search.split('=')[1];
+        }
+        console.log(this.url);
     }
     confirmReg() {
         // console.log('确认注册');
@@ -19,15 +29,67 @@ class Register {
         let confirmPw = inputs[5].value.trim();
         // console.log(userId,password,username,confirmPw);
         //非空验证
-        if (!userId || !password || !username || !confirmPw) {
-            alert('输入不能为空');
-        } else {
-            if (password == confirmPw) {
-                console.log('密码一致');
-            } else {
-                alert('密码不一致,重新输')
+        // if (!userId || !password || !username || !confirmPw) {
+        //     layer.open({
+        //         title: '必填项不能为空',
+        //         content: '请重新填写'
+        //     })
+        // }
+        //验证正则表达式
+        // let reg = [/^\w{4,10}$/, /^[\w\-]{8,18}$/, /^[\u4E00-\u9FA5\w]{3,8}$/];
+        // console.log(reg[0]);
+        // console.log(reg[0].test(userId));
+        //验证用户名
+        // if (reg[0].test(userId)) {
+        //     this.$('#inputUsername+span').style.display = 'none';
+        // } else {
+        //     this.$('#inputUsername+span').style.display = 'block';
+        // }
+        // //验证密码
+        // if (reg[1].test(password)) {
+        //     this.$('#inputPassword+span').style.display = 'none';
+        // } else {
+        //     this.$('#inputPassword+span').style.display = 'block';
+        // }
+        // //验证姓名
+        // if (reg[2].test(username)) {
+        //     this.$('.nameTag').style.display = 'none';
+        // } else {
+        //     this.$('.nameTag').style.display = 'block';
+        // }
+        // //验证确认密码
+        // if (password == confirmPw) {
+        //     this.$('.pwTwo').style.display = 'none';
+        // } else {
+        //     this.$('.pwTwo').style.display = 'block';
+        // }
+
+        //拼接参数
+        let param = `username=${userId}&password=${password}&rpassword=${confirmPw}&nickname=${username}`;
+        //发送注册请求
+        axios.post('http://localhost:8888/users/register', param, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
             }
-        }
+        }).then(({ data, status }) => {
+            // console.log(data, status);
+            // console.log(res);
+            //判断是否注册成功
+            if (status == 200 && data.code == 1) {
+                // console.log('注册成功');
+                if (this.url) {
+                    location.assign(this.url);
+                } else {
+                    location.assign('./login.html')
+                }
+            } else {
+                layer.open({
+                    title: '错误',
+                    content: '不能为空或格式错误或密码不一致或用户已存在,请重新输入'
+                })
+            }
+        })
+
     }
     //导航栏吸顶
     navTop() {

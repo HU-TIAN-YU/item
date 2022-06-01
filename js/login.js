@@ -42,11 +42,14 @@ class Login {
                 //保存到localStorage
                 localStorage.setItem('user_id', res.data.user.id);
                 localStorage.setItem('token', res.data.token);
-                sessionStorage.setItem('user_name', username)
+                // sessionStorage.setItem('user_name', username)
+                localStorage.setItem('username', username);
                 //保存之后如果有回调的地址 则跳转回去
                 if (this.url) {
                     // console.log(this.url);
                     location.assign(this.url)
+                } else {
+                    location.assign('./index.html');
                 }
             } else {
                 throw new Error('用户名或密码错误');

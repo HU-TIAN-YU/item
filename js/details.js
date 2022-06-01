@@ -26,7 +26,8 @@ class Details {
         if (token) {
             // console.log('已经登录');
             //获取登录的用户名
-            let username = sessionStorage.getItem('user_name');
+            // let username = sessionStorage.getItem('user_name');
+            let username = localStorage.getItem('username');
             // console.log(username);
             //把用户名显示到右上角 
             this.$('.login').innerHTML = username;
@@ -61,7 +62,8 @@ class Details {
                             //清除localStorage中的token个userId
                             localStorage.removeItem('token');
                             localStorage.removeItem('user_id');
-                            sessionStorage.removeItem('user_name');
+                            // sessionStorage.removeItem('user_name');
+                            localStorage.removeItem('username');
                             //换成登录选项
                             self.$('.login a').innerHTML = `<a href="./login.html?ReturnUrl=./index.html" style="color: black;">登录与注册</a>`;
                             //删除退出文本
@@ -207,7 +209,8 @@ class Details {
                 //清除localStorage中的token个userId
                 localStorage.removeItem('token');
                 localStorage.removeItem('user_id');
-                sessionStorage.removeItem('user_name');
+                // sessionStorage.removeItem('user_name');
+                localStorage.removeItem('username');
                 //跳转到登录页面  回跳当前页面
                 location.assign('./login.html?ReturnUrl=./details.html');
             }

@@ -264,11 +264,11 @@
                     <div class="info">
                         <div class="left">
                             <p>您的账号<span>*</span></p>
-                            <input id="inputUsername" type="text" placeholder="请输入有效的账号"><span
-                                class="span">请输入有效的账号</span>
+                            <input id="inputUsername" type="text" placeholder="至少5位数，包含数字字母下划线"><span
+                                class="span">请输入有效的账号，至少5位数，包含数字字母下划线</span>
                             <p>密码<span>*</span></p>
-                            <input id="inputPassword" type="password" placeholder="至少8位数，包含大小写字母和数字（或符号）"><span
-                                class="span">至少8位数，包含大小写字母和数字（或符号）</span>
+                            <input id="inputPassword" type="password" placeholder="至少6位数，包含大小写字母和数字（或符号）"><span
+                                class="span">至少8位数，包含大小写字母和数字下划线-</span>
                             <!-- <p>请输入验证码<span>*</span></p> -->
                             <!-- <input class="yan" type="text"> -->
                             <!-- 随机四位数 -->
@@ -278,8 +278,10 @@
                         <div class="right">
                             <p>姓名</p>
                             <input type="text" placeholder="请再次输入您的姓名">
+                            <span class="span nameTag">请输入正确的姓名3-8位，包含中文数字字母下划线</span>
                             <p>确认密码<span>*</span></p>
-                            <input type="password" placeholder="请再次输入您的密码"><span class="span">两次密码不一致</span>
+                            <input type="password" placeholder="请再次输入您的密码">
+                            <span class="span pwTwo">两次密码不一致</span>
                             <!-- <p>短信验证码<span>*</span></p>
                             <input class="yan" type="text">
                             <button>获取短信验证码</button><span class="span">请输入正确的验证码</span> -->
@@ -420,6 +422,7 @@
     <script
         src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js"></script>
     <script src="./static/javascripts/axios.min.js"></script>
+    <script src="./static/layer/layer.js"></script>
     <script src="./js/register.js"></script>
 </body>
 

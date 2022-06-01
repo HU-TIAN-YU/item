@@ -228,7 +228,8 @@ class List {
         if (token) {
             // console.log('已经登录');
             //获取登录的用户名
-            let username = sessionStorage.getItem('user_name');
+            // let username = sessionStorage.getItem('user_name');
+            let username = localStorage.getItem('username');
             // console.log(username);
             //把用户名显示到右上角 
             this.$('.login').innerHTML = username;
@@ -263,7 +264,8 @@ class List {
                             //清除localStorage中的token个userId
                             localStorage.removeItem('token');
                             localStorage.removeItem('user_id');
-                            sessionStorage.removeItem('user_name');
+                            // sessionStorage.removeItem('user_name');
+                            localStorage.removeItem('username');
                             //换成登录选项
                             self.$('.login a').innerHTML = `<a href="./login.html?ReturnUrl=./index.html" style="color: black;">登录与注册</a>`;
                             //删除退出文本
@@ -286,8 +288,10 @@ class List {
         if (top >= 180) {
             this.$('nav').style.position = 'fixed';
             this.$('nav').style.top = 0;
+            this.$('#swiper').style.marginTop = 63 + 'px';
         } else {
             this.$('nav').style.position = 'relative';
+            this.$('#swiper').style.marginTop = -63 + 'px';
         }
     }
     //二级菜单绑定

@@ -133,6 +133,7 @@ header .TopInformation {
   left: 20px;
   display: none;
 }
+
 .header-container .header-containerLeft .header-containerRight li:nth-last-child(2) {
   height: 50px;
   /* background-color: red; */
@@ -415,7 +416,7 @@ nav .navSlide .makeUpSubmenu .submenuButton .ImgRight div a {
 main {
   width: 100%;
   position: absolute;
-  top: 800px;
+  top: 900px;
 }
 
 main p {
@@ -939,4 +940,58 @@ aside div p {
 .stairs li:hover {
   background-color: rgba(0, 0, 0, 0.3);
   color: #ddd;
+}
+
+.timeBox {
+  position: absolute;
+  left: 10px;
+  top: 800px;
+  width: 240px;
+  height: 200px;
+  background-color: #9F0B0E;
+  text-align: center;
+}
+
+
+.txt .p1 {
+  width: 240px;
+  height: 70px;
+  line-height: 70px;
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.txt .p2 {
+  width: 240px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.times {
+  width: 240px;
+  height: 74px;
+  text-align: center;
+}
+
+.times span {
+  display: inline-block;
+  margin-top: 12px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  margin-right: 5px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+}
+.timeBox2 {
+  position: absolute;
+  right:  10px;
+  top: 800px;
+  width: 240px;
+  height: 200px;
+  background-color: #9F0B0E;
+  text-align: center;
 }
