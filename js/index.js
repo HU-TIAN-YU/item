@@ -4,7 +4,7 @@ class Index {
         this.nextPic();
         this.autoPlay();
         this.bindTwo();
-        // this.timeLast();
+        this.timeLast();
     }
     //事件绑定
     bindEve() {
@@ -26,8 +26,47 @@ class Index {
 
     }
 
+
+    //跑马灯
+    //分页
+
+
+
     //倒计时
-    
+    timeLast() {
+        this.hours = this.$('.hours');
+        this.min = this.$('.min');
+        this.second = this.$('.second');
+        // console.log(this.hours, this.min, this.second);
+        //返回用户输入时间总毫秒数
+        this.now = +new Date('2022-8-1 00:00:00');
+        //设置定时器
+        let timer = '';
+        this.setTimer(timer);
+        //清除定时器
+        if (this.hours.innerHTML == 0) {
+            clearInterval(timer);
+        }
+    }
+    setTimer(timer) {
+        timer = setInterval(() => {
+            //返回当前时间总毫秒数
+            let date = +new Date();
+            // console.log(date);
+            let times = (this.now - date) / 1000; //剩余时间总秒数
+            let t = parseInt(times / 60 / 60 / 24); //天
+            t = t < 10 ? '0' + t : t;
+            let h = parseInt(times / 60 / 60 % 24); //小时
+            h < 10 ? '0' + h : h;
+            this.hours.innerHTML = h;
+            let m = parseInt(times / 60 % 60); //分钟
+            m = m < 10 ? '0' + m : m;
+            this.min.innerHTML = m;
+            let s = parseInt(times % 60); //秒
+            s = s < 10 ? '0' + s : s;
+            this.second.innerHTML = s;
+        }, 1000)
+    }
     //导航栏吸顶
     navTop() {
         // console.log(document.documentElement.scrollTop);

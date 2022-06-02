@@ -986,12 +986,3 @@ aside div p {
   color: #fff;
   line-height: 50px;
 }
-.timeBox2 {
-  position: absolute;
-  right:  10px;
-  top: 800px;
-  width: 240px;
-  height: 200px;
-  background-color: #9F0B0E;
-  text-align: center;
-}
